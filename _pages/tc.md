@@ -1,3 +1,9 @@
+---
+layout: page
+title: Terms of Service
+include_in_header: false
+---
+
 # Not Evil Sudoku Terms of Service
 
 Not Evil Sudoku is a mobile application(the "App") owned, operated and maintained by Ashish Selvaraj("We", "Us"). This website and mobile app are made available to you subject to these terms of use, including those set forth in the Privacy Policy. By accessing or downloading the app you agree to follow and be bound by these terms which may be updated without advance notice. You can review the most current version of these terms on this page. We may make improvements and/or changes to the products, services, features, programs or prices described in the App at any time without prior notice. BY CONTINUING TO USE THE APP, YOU ARE INDICATING YOUR AGREEMENT TO THE TERMS AND ALL REVISIONS THEREOF.

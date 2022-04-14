@@ -1,3 +1,9 @@
+---
+layout: page
+title: Privacy Policy
+include_in_header: false
+---
+
 # Not Evil Sudoku Privacy Policy
 Not Evil Sudoku is a mobile application(the "App") owned, operated and maintained by Ashish Selvaraj("We", "Us"). We respect your privacy. Ashish Selvaraj does not sell or rent your data to any third parties and anonymous information is only collected to improve the app and make efficient use of our scarce resources. We aim to collect as little data as possible.
 
