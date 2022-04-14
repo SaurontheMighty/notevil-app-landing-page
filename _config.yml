@@ -1,5 +1,5 @@
 #page title
-page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : Not Evil Sudoku                                          # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
 # App Info
 ios_app_id                                : 1234793120                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
@@ -99,13 +99,13 @@ app_description_color                     : "#ffffff"
 feature_title_color                       : "#000000"
 feature_text_color                        : "#666666"
 
-feature_icons_foreground_color            : "#1d63ea"
+feature_icons_foreground_color            : "##db4918"
 feature_icons_background_color            : "#e6e6e6"
 
-social_icons_foreground_color             : "#666666"
+social_icons_foreground_color             : "##db4918"
 social_icons_background_color             : "#e6e6e6"
 
-footer_text_color                         : "#db4918"
+footer_text_color                         : "#000000"
 
 
 
