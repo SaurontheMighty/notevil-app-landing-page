@@ -41,19 +41,19 @@ features                                  :
     
   - title                                 : Timer
     description                           : See how fast you can solve a puzzle and keep track of your improvement.
-    fontawesome_icon_name                 : timer
+    fontawesome_icon_name                 : stopwatch
 
   - title                                 : Difficulty Modes
     description                           : Pick a difficulty mode that suits you.
-    fontawesome_icon_name                 : gamepad-modern
+    fontawesome_icon_name                 : chess-knight
 
   - title                                 : Undo
     description                           : Undo any moves you may regret.
-    fontawesome_icon_name                 : rotate-left
+    fontawesome_icon_name                 : undo
 
   - title                                 : Notes
     description                           : Keep track of which numbers you think may belong in a square.
-    fontawesome_icon_name                 : note
+    fontawesome_icon_name                 : clipboard
 
   - title                                 : Streak
     description                           : Develop a daily sudoku habit and keep track of your streak.
@@ -61,7 +61,7 @@ features                                  :
   
   - title                                 : Best Time
     description                           : See your best time to solve a sudoku game in each difficulty mode.
-    fontawesome_icon_name                 : trophy-star
+    fontawesome_icon_name                 : trophy-alt
 
   - title                                 : Charts
     description                           : See your progress over time and over difficulty.
@@ -69,7 +69,7 @@ features                                  :
 
   - title                                 : App Icons
     description                           : Fun alternate app icons to liven up your home screen.
-    fontawesome_icon_name                 : wand-magic-sparkles
+    fontawesome_icon_name                 : cactus
 
   - title                                 : # New Feature Title
     description                           : # New Feature Description
@@ -82,7 +82,7 @@ topbar_color                              : "#000000"
 topbar_transparency                       : 0.1
 topbar_title_color                        : "#ffffff"
 
-cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
+cover_image                               :                 # Replace with alternative image path or image URL.
 cover_overlay_color                       : "#363b3d"
 cover_overlay_transparency                : 0.8
 
