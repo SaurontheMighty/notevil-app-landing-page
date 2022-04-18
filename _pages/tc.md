@@ -32,4 +32,4 @@ This App is controlled by Ashish Selvaraj from Canada. Ashish Selvaraj makes no 
 The Terms of Service (including the Not Evil Sudoku Privacy Policy and other Supplemental Terms incorporated by reference into this document) constitute the entire agreement between you and we relating to your rights and obligations in the use of we Services. If there is any conflict between the Terms of Service and any other rules or instructions posted on a we Service, we shall resolve the conflict in its sole discretion.
 
 ## Contact Us
-Feel free to reach out at: not.evil.sudoku@gmail.com or tweet at me: @selvarajashish.
+Feel free to reach out at: sudoku@notevil.app or tweet at me: @selvarajashish.
