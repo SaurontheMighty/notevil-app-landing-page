@@ -5,7 +5,7 @@ page_title                                : Not Evil Sudoku                     
 ios_app_id                                : 1614071642                               # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-appstore_link                             : https://apps.apple.com/us/app/not-evil-sudoku/id1614071642                                          # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+appstore_link                             : https://apple.co/3vyesUR                                          # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
 playstore_link                            :                                           # Enter Google Play Store URL.
 presskit_download_link                    : https://www.notevil.app/press-kit.zip                                         # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
@@ -15,7 +15,7 @@ app_name                                  : Not Evil Sudoku                     
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_description                           : No ads. No sign up. Simply Sudoku.
 
-enable_smart_app_banner                   : false                                      # Set to true to show a smart app banner at top of page on mobile devices.
+enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
 
 

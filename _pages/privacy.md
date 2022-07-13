@@ -15,7 +15,7 @@ The data we collect is general information that is not linked to you, such as: a
 Ashish Selvaraj developed the analytics solution in-house to minimize information collection. When data is no longer needed, it shall be deleted.
 
 ## Identifier
-The user identifier is NOT linked to any of the user's personal information. It is generated using Apple's "IdentifierForVendor" API. It helps us differentiate between users without collecting personal data. This id is common to all the apps on your device which are built by Ashish Selvaraj. If you uninstall and re-install all of Ashish Selvaraj's apps, this id will change.
+The user identifier is NOT linked to any of the user's personal information. It is generated using Apple's "IdentifierForVendor" API. It helps us differentiate between users without collecting personal data. This id is common to all the apps on your device which are built by Ashish Selvaraj. More information on it is available in Apple's documentation.
 
 ## Changes
 Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022.
