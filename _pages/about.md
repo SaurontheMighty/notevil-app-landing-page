@@ -7,7 +7,18 @@ include_in_header: false
 # Not Evil Sudoku
 Not Evil Sudoku is a minimalist, offline, and totally ad-free sudoku app for iPhone with over 50,000 installs and 200+ 5-star reviews.
 
-Built natively for iPhone and iPad with the sole aim of providing users with a joyful sudoku-solving experience. Never played before? Move by Move validation in Settings can tell you whether a move is correct as you make it.
+Built natively for iPhone and iPad with the sole aim of providing users with a joyful sudoku-solving experience. 
+
+A sudoku beginner? Move by Move validation in Settings can tell you whether a move is correct as you make it.
+
+# Why I Made Not Evil Sudoku
+One fateful afternoon, I had the sudden urge to play sudoku. Naturally, I went to the App Store and downloaded a few of the top results.
+
+I was shocked at how terrible the user experience was in most sudoku apps. There was a banner ad at the bottom (which I could live with), a video ad every few turns (absolutely evil) and an ad after every game.
+
+So, I did what any self-respecting programmer would do: I made one myself :)
+
+I'm not against ads in general, but so few apps seem to be willing to do them in moderation.
 
 # Features
 - Fully offline
@@ -36,12 +47,5 @@ Built natively for iPhone and iPad with the sole aim of providing users with a j
 
 Users can play a daily sudoku game for free while leveraging all the powerful features of the app. Unlimited games can be unlocked with a small one-time purchase (Pro). Pro supports family sharing.
 
-# Why I Made Not Evil Sudoku
-One fateful afternoon, I had the sudden urge to play sudoku. Naturally, I went to the App Store and downloaded a few of the top results.
-
-I was shocked at how terrible the user experience was in most sudoku apps. There was a banner ad at the bottom (which I could live with), a video ad every few turns (absolutely evil) and an ad after every game.
-
-So, I did what any self-respecting programmer would do: I made one myself :)
-
-I'm not against ads in general, but so few apps seem to be willing to do them in moderation.
-
+# Download Not Evil Sudoku
+https://apps.apple.com/app/not-evil-sudoku/id1614071642
