@@ -47,5 +47,4 @@ I'm not against ads in general, but so few apps seem to be willing to do them in
 
 Users can play a daily sudoku game for free while leveraging all the powerful features of the app. Unlimited games can be unlocked with a small one-time purchase (Pro). Pro supports family sharing.
 
-# Download Not Evil Sudoku
-https://apps.apple.com/app/not-evil-sudoku/id1614071642
+### [Get Not Evil Sudoku on the App Store](https://apps.apple.com/app/not-evil-sudoku/id1614071642)
