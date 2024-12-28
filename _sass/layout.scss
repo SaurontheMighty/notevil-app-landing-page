@@ -332,11 +332,24 @@ nav > ul li a:active {
 } 
 
 .downloadButtonsContainer {
-	display: inline-block;
+	// display: inline-block;
 	margin-top: 42px;
 	border: 3px solid white;
 	border-radius: 12px;
 	filter: $drop-shadow;
+	display: None;
+}
+
+.qrContainer {
+	// display: inline-block;
+	margin-top: 42px;
+	padding: 0px;
+	filter: $drop-shadow;
+	display: None;
+}
+
+.qr {
+	width: 25vw;
 }
 
 @media only screen and (max-width: 992px) {
@@ -344,9 +357,21 @@ nav > ul li a:active {
 	.downloadButtonsContainer {
 		text-align: center;
 	}
-	
 } 
 
+@media only screen and (max-width: 699px) {
+
+	.downloadButtonsContainer {
+		display: inline-block;
+	}
+} 
+
+@media only screen and (min-width: 700px) {
+
+	.qrContainer {
+		display: inline-block;
+	}
+} 
 
 .appStore {
 	height: 75px;
@@ -375,7 +400,6 @@ nav > ul li a:active {
 		display: block;
 	}
 } 
-
 
 // Feature List
 
