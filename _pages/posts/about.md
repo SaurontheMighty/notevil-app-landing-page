@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About Not Evil Sudoku
+layout: post
+title: About
 include_in_header: false
 ---
 

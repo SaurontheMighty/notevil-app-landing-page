@@ -39,17 +39,17 @@ features                                  :
     description                           : Most sudoku apps are filled with ads. Not Evil Sudoku is not one of them.
     fontawesome_icon_name                 : magic
     
-  - title                                 : Timer
-    description                           : See how fast you can solve a puzzle and keep track of your improvement.
-    fontawesome_icon_name                 : stopwatch
+  - title                                 : Daily Puzzles
+    description                           : A puzzle for every day synced across all users.
+    fontawesome_icon_name                 : calendar
 
   - title                                 : Difficulty Modes
     description                           : Pick a difficulty mode that suits you.
     fontawesome_icon_name                 : chess-knight
 
-  - title                                 : Undo
-    description                           : Undo any moves you may regret.
-    fontawesome_icon_name                 : undo
+  - title                                 : Game Settings
+    description                           : Powerful customization to tailor your experience.
+    fontawesome_icon_name                 : wrench
 
   - title                                 : Notes
     description                           : Keep track of which numbers you think may belong in a square.
@@ -60,11 +60,11 @@ features                                  :
     fontawesome_icon_name                 : fire
   
   - title                                 : Best Time
-    description                           : See your best time to solve a sudoku game in each difficulty mode.
+    description                           : See your best times across difficulty modes.
     fontawesome_icon_name                 : medal
 
   - title                                 : Charts
-    description                           : See your progress over time and over difficulty.
+    description                           : See your progress over time and across difficulties.
     fontawesome_icon_name                 : chart-line
 
   - title                                 : App Icons
@@ -105,7 +105,7 @@ feature_icons_background_color            : "#e6e6e6"
 social_icons_foreground_color             : "#000000"
 social_icons_background_color             : "#e6e6e6"
 
-footer_text_color                         : "#000000"
+footer_text_color                         : "#ffffff"
 
 
 
