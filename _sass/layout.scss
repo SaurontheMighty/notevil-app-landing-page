@@ -572,13 +572,13 @@ nav > ul li a:active {
 // Footer
 
 footer {
-	grid-area: f;
+	// grid-area: f;
 	// display: flex;
 	// flex-wrap: wrap;
 	// justify-content: center;
 	margin-top: 50px;
-	padding-top: 15px;
-	// border-top: 1px solid white;
+	padding: 15px 0px 0px 200px;
+	background-color: #001623;
 }
 
 .footer-box {
@@ -590,6 +590,12 @@ footer {
 @media only screen and (max-width: 600px) {
 	.footer-box {
 		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	footer {
+		padding-left: 20px;
 	}
 }
 
@@ -678,13 +684,13 @@ footer {
 	padding: 20px;
 	width: 100%;
 	max-width: 1200px;
-	border-top: 1px solid #6d6d6d;
+	// border-top: 1px solid #6d6d6d;
 
   
 	h3 {
 	  text-align: left;
 	  font-size: 2.5rem;
-	  margin-bottom: 20px;
+	  margin-bottom: 22px;
 	  color: white;
 	}
   
@@ -699,7 +705,7 @@ footer {
   
 	  .post-item {
 		border-radius: 8px;
-		padding: 5px;
+		padding-bottom: 15px;
   
 		&:hover {
 		  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -718,6 +724,6 @@ footer {
 	}
   }
 
-  .blog-container:not(:last-child) {
-	border-right: 1px solid #6f6f6f;
-  }
+//   .blog-container:not(:last-child) {
+// 	border-right: 1px solid #4b4b4b;
+//   }
