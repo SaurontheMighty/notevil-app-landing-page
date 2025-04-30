@@ -41,7 +41,7 @@ The most basic technique is scanning - systematically looking for possible numbe
 %}
 
 
-### Elimination
+## Elimination
 
 {% include board.html 
   image="/assets/elimination1.png"

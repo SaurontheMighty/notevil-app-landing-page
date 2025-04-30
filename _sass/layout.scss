@@ -777,7 +777,6 @@ footer {
 	padding: 20px;
 	width: 100%;
 	max-width: 1200px;
-	// border-top: 1px solid #6d6d6d;
 
   
 	h3 {
@@ -798,10 +797,6 @@ footer {
 	  .post-item {
 		border-radius: 8px;
 		padding-bottom: 15px;
-  
-		&:hover {
-		  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		}
 	  }
 	}
   }
