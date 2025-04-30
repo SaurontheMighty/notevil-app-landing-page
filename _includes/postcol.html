@@ -1,0 +1,16 @@
+<section class="page-right posts-column">
+    <div class="posts-list">
+        <h2>Posts</h2>
+        {% assign post_pages = site.pages | where_exp: "page", "page.url contains 'posts'" %}
+        {% for post in post_pages%}
+            {% if post.url != '/posts/' %}
+                <a href="{{ post.url }}" target="_self">{{ post.short_title }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="downloadButtonsContainerAlwaysShow">
+        <div class="appStoreLinkWrapper">
+            <a class="appStoreLink" href="{{site.appstore_link}}"><img src="/assets/appstore.png"></a>
+        </div>
+    </div>
+</section>

@@ -2,7 +2,10 @@
 	<h3>Blog</h3>
 	<div class="post-grid">
 		<div class="post-item">
-			<a href="/posts/about">About</a>
+			<a href="{{ '/posts/about' | relative_url }}">About</a>
+		</div>
+		<div class="post-item">
+			<a href="{{ '/posts/how-to-play' | relative_url }}">How to Play Sudoku</a>
 		</div>
 		<!-- {% for page in site.pages %}
 			{% if page.path contains 'posts' %}

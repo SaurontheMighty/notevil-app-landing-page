@@ -1,0 +1,13 @@
+<div class="board-container">
+  <div class="board-content">
+    <div class="board-image">
+      <div class="board-border">
+        <img src="{{ include.image }}" alt="{{ include.alt | default: 'Sudoku board' }}">
+      </div>
+      <div class="board-shadow"></div>
+    </div>
+    <div class="board-text">
+      {{ include.text }}
+    </div>
+  </div>
+</div>

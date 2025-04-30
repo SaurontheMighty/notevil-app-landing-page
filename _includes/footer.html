@@ -1,4 +1,4 @@
-<footer>
+<footer class="{% if page.url contains 'posts' %}footer-posts{% else %}footer-default{% endif %}">
 	<div class="footer-box">
 		{% include postsbar.html %}
 

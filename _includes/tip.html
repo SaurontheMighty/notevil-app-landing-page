@@ -1,0 +1,6 @@
+<div class="tip-box">
+    <div class="tip-content">{{ include.tip }}</div>
+    {% if include.setting != nil and include.setting != "" %}
+        <div class="tip-setting">{{ include.setting }}</div>
+    {% endif %}
+</div>

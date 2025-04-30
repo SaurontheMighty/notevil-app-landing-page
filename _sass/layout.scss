@@ -75,10 +75,27 @@
 	}
 }
 
+.page-original {
+	margin-top: 30px;
+	margin-bottom: 70px;
+	grid-column: 2/12;
+}
+
 .page {
 	margin-top: 30px;
 	margin-bottom: 70px;
-	grid-column: 3/11;
+	grid-column: 1/13;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.page-left {
+	flex: 0 0 75%;
+}
+
+.page-right {
+	flex: 0 0 20%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -87,6 +104,11 @@
 		margin-top: 30px;
 		margin-bottom: 70px;
 		grid-column: 1/-1;
+		flex-direction: column;
+	}
+
+	.page-right {
+		margin-top: 50px;
 	}
 	
 } 
@@ -333,6 +355,23 @@ nav > ul li a:active {
 	
 } 
 
+.downloadButtonsContainerAlwaysShow {
+	padding: 20px 0;
+	width: 200px;
+	
+	.appStoreLinkWrapper {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	img {
+		width: 180px;
+		height: auto;
+		object-fit: cover;
+	}
+}
+
 .downloadButtonsContainer {
 	// display: inline-block;
 	margin-top: 42px;
@@ -340,7 +379,6 @@ nav > ul li a:active {
 	border-radius: 12px;
 	filter: $drop-shadow;
 	display: None;
-
 }
 
 .qrContainer {
@@ -349,10 +387,25 @@ nav > ul li a:active {
 	padding: 0px;
 	filter: $drop-shadow;
 	display: None;
+	// background-color: #002a44;
+	// border: 2px solid white;
+	// border-radius: 10px;
 }
 
 .qr {
 	width: 25vw;
+	min-width: 300px;
+	max-width: 500px;
+	// background: linear-gradient(-45deg, #eeeeee05 40%, #fafafa20 50%, #eeeeee05 60%);
+	// background-size: 300%;
+	// background-position-x: 80%;
+	// animation: shimmer 3s infinite linear;
+}
+
+@keyframes shimmer {
+	to {
+		background-position-x: 0%
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -578,13 +631,58 @@ footer {
 	// justify-content: center;
 	margin-top: 50px;
 	padding: 15px 0px 0px 200px;
-	background-color: #001623;
 }
+
+.footer-default {
+	background-color: #000;
+
+	h3 {
+		color: white;
+	}
+
+	.footerLinks a {
+		margin-right: 30px;
+	}
+
+	a {
+		color: #56a8e8;
+		font-size: 2rem;
+		font-weight: normal;
+
+		&:hover {
+		color: #005f99;
+		}
+	}
+}
+
+.footer-posts {
+	background-color: #f8f2eb;
+
+	h3 {
+		color: #002a44;
+	}
+
+	.footerLinks a {
+		margin-right: 30px;
+	}
+
+	a {
+		color: #297ec0;
+		font-size: 2rem;
+		font-weight: normal;
+
+		&:hover {
+			color: #005f99;
+		}
+	}
+}
+
 
 .footer-box {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
+	max-width: 1200px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -600,7 +698,7 @@ footer {
 }
 
 .footerText {
-	color: $footer-text-color;
+	
 	// display: block;
 	line-height: 1.5;
 	width: 100%;
@@ -626,11 +724,6 @@ footer {
   	flex-direction: column;
 	margin: 20px;
 	width: 50%;
-}
-
-.footerLinks a {
-	color: #56a8e8;
-	margin-right: 30px;
 }
 
 .footerLinks a:last-child {
@@ -659,7 +752,7 @@ footer {
 @media only screen and (max-width: 992px) {
 	
 	.footerText {
-		color: $footer-text-color;
+		// color: $footer-text-color;
 		display: block;
 		line-height: 1.5;
 		width: 100%;
@@ -691,7 +784,6 @@ footer {
 	  text-align: left;
 	  font-size: 2.5rem;
 	  margin-bottom: 22px;
-	  color: white;
 	}
   
 	.post-grid {
@@ -710,16 +802,6 @@ footer {
 		&:hover {
 		  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		}
-  
-		a {
-		  color: #56a8e8;
-		  font-size: 2rem;
-		  font-weight: normal;
-  
-		  &:hover {
-			color: #005f99;
-		  }
-		}
 	  }
 	}
   }
@@ -727,3 +809,192 @@ footer {
 //   .blog-container:not(:last-child) {
 // 	border-right: 1px solid #4b4b4b;
 //   }
+
+.posts-grid-2 {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+	padding-left: 50px;
+}
+
+.posts-column-2 {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.posts-column {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color: #fffaf4;
+	border-radius: 8px;
+
+	h2 {
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #002a44;
+		color: #002a44;
+	}
+
+	.posts-list {  // New class for the posts list section
+		background-color: #f8efe6;
+		padding: 15px;
+		border-radius: 6px;
+		margin-bottom: 10px;
+	}
+
+	a {
+		color: #002a44;
+		display: block;
+		white-space: nowrap;
+		line-height: 1.2;
+		font-size: 1.8rem;
+		margin-bottom: 8px;
+
+		&:hover {
+			color: #005f99;
+		}
+	}
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.board-container {
+	margin: 16px auto;
+	overflow: hidden;
+	padding-bottom: 16px;
+}
+
+.board-content {
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+}
+
+.board-image {
+	position: relative;
+	padding: 4px;
+	flex: 0 0 300px;  // Fixed width for the image section
+	overflow: hidden;
+}
+
+.board-border {
+	border: 4px solid #ccc;
+	background: white;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	display: block;
+}
+
+.board-shadow {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	z-index: 1;
+}
+
+.board-border img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.board-text {
+	flex: 1;  // Take remaining space
+	padding-top: 4px;  // Align with image top
+}
+
+@media (max-width: 768px) {
+	.board-content {
+		flex-direction: column;
+	}
+	
+	.board-image {
+		flex: 0 0 auto;  
+		width: 100%; 
+		max-width: 300px;
+		margin: 0 auto;  // Center the image
+	}
+	
+	.board-text {
+		padding-top: 16px;  // Add space between image and text
+		padding-bottom: 16px;  // Add space between image and text
+	}
+}
+
+.hint-box {
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	padding: 16px;
+	margin: 16px 0;
+	position: relative;
+	font-style: italic;
+}
+  
+.hint-box::before {
+	content: "HINT";
+	position: absolute;
+	top: -10px;
+	left: 16px;
+	background-color: #f5f5f5;
+	padding: 0 8px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #666;
+}
+
+.tip-box {
+  background-color: #e8f4ff;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 16px 0;
+  position: relative;
+}
+
+.tip-box::before {
+  content: "TIP";
+  position: absolute;
+  top: -10px;
+  left: 16px;
+  background-color: #e8f4ff;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.tip-content {
+//   font-style: italic;
+  margin-bottom: 12px;  // Slightly more space between sections
+}
+
+.tip-setting {
+  font-style: normal;
+  font-family: monospace;  // More technical looking font
+  background-color: #fff;  // White background
+  padding: 8px 12px;      // Some padding
+  border-radius: 3px;     // Slight rounding
+  border-left: 3px solid #0066cc;  // Blue accent line
+  font-size: 0.95em;      // Slightly smaller
+}

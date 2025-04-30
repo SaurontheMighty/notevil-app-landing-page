@@ -1,15 +1,19 @@
 ---
 layout: post
-title: About
+title: About Not Evil Sudoku
+short_title: ⛰️ About
 include_in_header: false
 ---
 
 # Not Evil Sudoku
-Not Evil Sudoku is a minimalist, offline, and totally ad-free sudoku app for iPhone with over 50,000 installs and 200+ 5-star reviews.
 
 Built natively for iPhone and iPad with the sole aim of providing users with a joyful sudoku-solving experience. 
 
 A sudoku beginner? Move by Move validation in Settings can tell you whether a move is correct as you make it.
+
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/iZ796aZaupw?rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+</div>
 
 # Why I Made Not Evil Sudoku
 One fateful afternoon, I had the sudden urge to play sudoku. Naturally, I went to the App Store and downloaded a few of the top results.
@@ -47,4 +51,3 @@ I'm not against ads in general, but so few apps seem to be willing to do them in
 
 Users can play a daily sudoku game for free while leveraging all the powerful features of the app. Unlimited games can be unlocked with a small one-time purchase (Pro). Pro supports family sharing.
 
-### [Get Not Evil Sudoku on the App Store](https://apps.apple.com/app/not-evil-sudoku/id1614071642)
