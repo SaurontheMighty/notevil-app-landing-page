@@ -998,3 +998,33 @@ footer {
   border-left: 3px solid #0066cc;  // Blue accent line
   font-size: 0.95em;      // Slightly smaller
 }
+
+.mobile-download-link {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.page-right {
+        margin-top: 0;    // Remove top margin
+        padding-top: 0;   // Remove top padding
+        height: auto;     // Allow height to adjust to content
+        min-height: unset;  // Remove minimum height
+    }
+
+    .posts-column {
+        padding: 10px;
+        margin-bottom: 20px;
+        height: auto;        // Allow height to adjust to content
+        min-height: unset;   // Remove any minimum height constraints
+        flex: 0 0 auto;      // Don't force flex growth or shrinking
+    }
+
+	.downloadButtonsContainerAlwaysShow {
+        display: none;  // Hide download button on mobile
+    }
+
+	.mobile-download-link {
+		display: block;
+		font-style: italic;
+	}
+}
