@@ -4,8 +4,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base target="_blank">
 
-	<title class="pageTitle">{{ site.page_title }}</title>
-	<meta name="description" content="{{ site.app_description }}">
+	<title class="pageTitle">{% if include.page_title %}{{ include.page_title }}{% else %}{{ site.app_title }}{% endif %}</title>
+	
+	<meta property="og:title" content="{% if include.page_title %}{{ include.page_title }}{% else %}{{ site.app_title }}{% endif %}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:description" name="description" content="{% if include.page_description %}{{ include.page_description }}{% else %}{{ site.app_description }}{% endif %}">
+	<meta property="og:site_name" content="Not Evil Sudoku Blog" />
+	<meta property="og:locale" content="en_US" />
 
 	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
 

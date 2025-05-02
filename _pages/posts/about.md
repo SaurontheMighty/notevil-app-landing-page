@@ -1,21 +1,20 @@
 ---
 layout: post
-title: About Not Evil Sudoku
+title: What is Not Evil about Not Evil Sudoku? 
+description: Most apps particularly mobile games are crammed with ads to a degree that is decidedly evil. After one particularly frustrating experience, I took things into my own hands and made Not Evil Sudoku with the desire of having a clean, minimalist and ad-free sudoku solving experience.
 short_title: ⛰️ About
 include_in_header: false
 ---
 
 # Not Evil Sudoku
 
-Built natively for iPhone and iPad with the sole aim of providing users with a joyful sudoku-solving experience. 
-
-A sudoku beginner? Move by Move validation in Settings can tell you whether a move is correct as you make it.
+Built natively for iPhone and iPad with the sole aim of providing users with a joyful sudoku-solving experience. A sudoku beginner? Move by Move validation in Settings can tell you whether a move is correct as you make it.
 
 <div class="video-container">
   <iframe src="https://www.youtube.com/embed/iZ796aZaupw?rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-# Why I Made Not Evil Sudoku
+## What makes it Not Evil?
 One fateful afternoon, I had the sudden urge to play sudoku. Naturally, I went to the App Store and downloaded a few of the top results.
 
 I was shocked at how terrible the user experience was in most sudoku apps. There was a banner ad at the bottom (which I could live with), a video ad every few turns (absolutely evil) and an ad after every game.
@@ -24,10 +23,11 @@ So, I did what any self-respecting programmer would do: I made one myself :)
 
 I'm not against ads in general, but so few apps seem to be willing to do them in moderation.
 
-# Features
+## Features
 - Fully offline
 - Ad-free
 - Real-time move checking 
+- Leaderboards
 - Timer: Track your sudoku-solving speed. The timer can be hidden in Settings if time pressure isn't your thing.
 - Difficulty Modes: Easy, Medium, Hard
 - Haptic Feedback
