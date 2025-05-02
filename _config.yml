@@ -140,3 +140,7 @@ collections:
 
 # Markdown rendering
 markdown: kramdown
+
+url: "https://notevil.io" 
+plugins:
+  - jekyll-sitemap
