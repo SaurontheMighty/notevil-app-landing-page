@@ -39,10 +39,25 @@
                         <div class="downloadButtonsContainer">
                             <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
                         </div>
-                        <div class="qrContainer">
-                            <img class="qr" src="assets/laptopqr.png"></a>
+                        <a href="{{site.appstore_link}}">
+                            <div class="qrContainer">
+                                <img class="qr" src="assets/laptopqr.png"></a>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Reviews Section -->
+                    <div class="reviews-section">
+                        <h3>Reviews</h3>
+                        <div class="reviews-container">
+                            <button class="carousel-button prev" aria-label="Previous review">❮</button>
+                            <div class="reviews-group">
+                                <!-- Reviews will be dynamically inserted here -->
+                            </div>
+                            <button class="carousel-button next" aria-label="Next review">❯</button>
                         </div>
                     </div>
+
                     {% include features.html %}
                     
                     {% include appstoreimages.html %}
@@ -50,5 +65,7 @@
                 {% include footer.html %}
             </div>
         </div>
+    <script src="{{ site.baseurl }}/assets/js/default.js"></script>
 </body>
 </html>
+

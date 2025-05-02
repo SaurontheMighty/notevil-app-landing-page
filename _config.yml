@@ -13,7 +13,7 @@ presskit_download_link                    : https://www.notevil.app/not-evil-sud
 app_icon                                  : assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : Not Evil Sudoku                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : A clean, minimalist sudoku app built natively for iPhone.
+app_description                           : No ads, no tracking, no data mining. Just a clean, minimalist sudoku app built natively for iPhone and iPad.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -43,9 +43,9 @@ features                                  :
     description                           : A puzzle for every day synced across all users.
     fontawesome_icon_name                 : calendar
 
-  - title                                 : Difficulty Modes
-    description                           : Pick a difficulty mode that suits you.
-    fontawesome_icon_name                 : chess-knight
+  - title                                 : Leaderboards
+    description                           : See where your solve times rank across your friends and all players.
+    fontawesome_icon_name                 : star
 
   - title                                 : Game Settings
     description                           : Powerful customization to tailor your experience.
@@ -78,34 +78,34 @@ features                                  :
 
 
 # Theme Settings
-topbar_color                              : "#000000"
-topbar_transparency                       : 0.1
-topbar_title_color                        : "#ffffff"
+topbar_color                              : "#f8f2eb"
+topbar_transparency                       : 1.0
+topbar_title_color                        : "#002a44"
 
-cover_image                               : 'assets/headerimage.png'                # Replace with alternative image path or image URL.
-cover_overlay_color                       : "#000000"
+cover_image                               : 'assets/headerimage.png'
+cover_overlay_color                       : "#fffaf4"
 cover_overlay_transparency                : 0.5
 
-device_color                              : frame                                    # Set to: blue, black, yellow, coral or white.
+device_color                              : frame
 
-body_background_color                     : "#000c1f"
+body_background_color                     : "#fffaf4"
 
-link_color                                : "#1d63ea"
+link_color                                : "#297ec0"
 
-app_title_color                           : "#ffffff"
-app_price_color                           : "#ffffff"
-app_description_color                     : "#ffffff"
+app_title_color                           : "#002a44"
+app_price_color                           : "#333333"
+app_description_color                     : "#333333"
 
-feature_title_color                       : "#ffffff"
-feature_text_color                        : "#ffffff"
+feature_title_color                       : "#002a44"
+feature_text_color                        : "#333333"
 
-feature_icons_foreground_color            : "#000000"
-feature_icons_background_color            : "#e6e6e6"
+feature_icons_foreground_color            : "#002a44"
+feature_icons_background_color            : "#f8f2eb"
 
-social_icons_foreground_color             : "#000000"
-social_icons_background_color             : "#e6e6e6"
+social_icons_foreground_color             : "#002a44"
+social_icons_background_color             : "#f8f2eb"
 
-footer_text_color                         : "#ffffff"
+footer_text_color                         : "#333333"
 
 
 

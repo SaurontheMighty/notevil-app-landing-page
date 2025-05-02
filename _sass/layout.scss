@@ -1,21 +1,14 @@
 .imageWrapper {					// Sets the background image in the header area
 	height: 714px;
-	background: 
-		linear-gradient(
-		rgba($image-overlay-color, $image-overlay-transparency), 
-		rgba($image-overlay-color, $image-overlay-transparency)
-		   ),
-		
-		url($header-image);
-
+	background: #fffaf4;  // Changed to light theme color
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top; 
 }
 
 .headerBackground {
-	height: 115px;
-	// background-color: rgba($header-color, $header-transparency);
+	height: 90px;
+	background-color: #f8f2eb;  // Slightly darker shade for header
 }
 
 @media only screen and (max-width: 768px) {
@@ -37,11 +30,12 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: auto auto auto auto;
+	grid-template-rows: auto auto auto auto auto;  // Added one more auto
 	grid-column-gap: 30px;
 	grid-template-areas: 
 		"h h h h h h h h h h h h"
 		"p p p p p i i i i i i i"
+		"r r r r r r r r r r r r"  // New row for reviews
 		"c c c c c c c c c c c c"
 		"f f f f f f f f f f f f"
 		"d d d d d d d d d d d d";
@@ -56,7 +50,7 @@
 @media only screen and (max-width: 768px) {
 
 	.container {					// Set up the container for the site content
-		grid-template-rows: 80px 811px auto auto;
+		grid-template-rows: 80px 811px auto auto auto auto;
 	}
 }
 
@@ -65,11 +59,12 @@
 	.container {
 		grid-column-gap: 0px;
 		grid-template-columns: 1;
-		grid-template-rows: 115px auto auto auto auto;
+		grid-template-rows: 115px auto auto auto auto auto;
 		grid-template-areas: 
 			"h h h h h h h h h h h h"
 			"i i i i i i i i i i i i"
 			"p p p p p p p p p p p p"
+			"r r r r r r r r r r r r"
 			"c c c c c c c c c c c c"
 			"f f f f f f f f f f f f";
 	}
@@ -120,11 +115,11 @@ header {
 }
 
 .logo {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	height: 115px;
-	margin-right: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  // Centers content vertically
+    height: 90px;  // Match header height
+    margin-right: 30px;
 }
 
 .logo > p {
@@ -170,19 +165,16 @@ header {
 
 // Navigation Links
 .scroll {
-	display: flex;
-	width: 100%;
-	align-items: center;
-	justify-content: flex-end;
-
-	height: 115px;
-	//margin-left: 15px;
-
-	white-space: nowrap;
-	overflow-x: auto;
-	overflow-y: hidden;
-	-webkit-overflow-scrolling: touch;
-	-ms-overflow-style: -ms-autohiding-scrollbar;
+    display: flex;
+    width: 100%;
+    align-items: center;  // Centers content vertically
+    justify-content: flex-end;
+    height: 90px;  // Match header height
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 @media only screen and (max-width: 768px) {
@@ -267,7 +259,7 @@ nav > ul li a:active {
 	grid-area: i;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 140px;
+	padding-top: 120px;
 	align-content: flex-start;
 	// border: 1px solid salmon;
 }
@@ -334,13 +326,17 @@ nav > ul li a:active {
 } 
 
 .appDescriptionContainer {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: normal;
 	width: 100%;
 	align-items: flex-start;
 	margin-top: 45px;
 	flex: 0 1 auto;
 	line-height: 1.5;
+
+	@media only screen and (max-width: 992px) {
+		padding: 0 20px;  // Added padding for mobile
+	}
 }
 
 .appDescription {
@@ -375,31 +371,65 @@ nav > ul li a:active {
 .downloadButtonsContainer {
 	// display: inline-block;
 	margin-top: 42px;
-	border: 3px solid white;
-	border-radius: 12px;
 	filter: $drop-shadow;
 	display: None;
 }
 
 .qrContainer {
-	// display: inline-block;
 	margin-top: 42px;
-	padding: 0px;
+	padding: 2px 12px;
 	filter: $drop-shadow;
 	display: None;
-	// background-color: #002a44;
-	// border: 2px solid white;
-	// border-radius: 10px;
+	background: rgba(255, 255, 255, 0.4);  // Much lighter background
+	border-radius: 12px;
+	backdrop-filter: blur(8px);
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	transition: all 0.3s ease;
+
+	// Iridescent overlay
+	&::before {
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 200%;
+		height: 200%;
+		background: linear-gradient(
+			45deg,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 0, 144, 0.1) 30%,
+			rgba(128, 255, 0, 0.1) 40%,
+			rgba(0, 255, 255, 0.2) 50%,
+			rgba(195, 0, 255, 0.1) 60%,
+			rgba(255, 0, 144, 0.1) 70%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		pointer-events: none;
+		transform: rotate(45deg);
+		transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	&:hover {
+		background: rgba(255, 255, 255, 0.5);
+		box-shadow: 
+			0 8px 32px rgba(0, 0, 0, 0.1),
+			inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+	}
+}
+
+// Remove transition when actively moving mouse
+.qrContainer.moving::before {
+	transition: none;
 }
 
 .qr {
 	width: 25vw;
 	min-width: 300px;
 	max-width: 500px;
-	// background: linear-gradient(-45deg, #eeeeee05 40%, #fafafa20 50%, #eeeeee05 60%);
-	// background-size: 300%;
-	// background-position-x: 80%;
-	// animation: shimmer 3s infinite linear;
+	display: block;  // Ensures proper centering
+	margin: 0 auto;  // Centers the QR code in container
 }
 
 @keyframes shimmer {
@@ -447,7 +477,7 @@ nav > ul li a:active {
 	grid-area: p;
 	background-size: 400px auto;
 	background-repeat: no-repeat;
-	margin-top: 40px;
+	margin-top: 20px;
 	display: none;
 	// border: 1px solid yellow;
 }
@@ -474,14 +504,18 @@ nav > ul li a:active {
 	margin-top: 40px;
 	width: 100%;
 	max-width: 1200px;
-	background-color: #002a44;
+	background-color: #f8f2eb;  // Changed from dark blue to light theme
 	border-radius: 24px;
 
 	h3 {
 		text-align: left;
 		font-size: 2.5rem;
 		margin-bottom: 20px;
-		color: white;
+		color: #002a44;  // Changed to dark blue for contrast
+	}
+
+	@media only screen and (max-width: 768px) {
+		margin-top: 0px;
 	}
 }
 
@@ -503,6 +537,21 @@ nav > ul li a:active {
 	padding-left: 15px;
 	padding-right: 15px;
 	width: calc(100%/3);
+	
+	.featureText {
+		margin-left: 18px;
+		
+		> h3 {
+			color: #002a44;  // Changed to dark blue for better contrast
+		}
+		
+		> p {
+			color: #333333;  // Changed to dark gray for better readability
+			margin-top: 0px;
+			line-height: 1.5;
+			font-size: smaller;
+		}
+	}
 }
 
 .feature:nth-child(-n+3) {
@@ -518,11 +567,11 @@ nav > ul li a:active {
 }
 
 .iconBack {
-	color: $feature-icons-background-color;
+	color: #f8f2eb;  // Lighter shade for icon background
 }
 
 .iconTop {
-	color: $feature-icons-foreground-color;
+	color: #002a44;  // Dark blue for icon foreground
 }
 
 .socialIconBack {
@@ -531,20 +580,6 @@ nav > ul li a:active {
 
 .socialIconTop {
 	color: $social-icons-foreground-color;
-}
-
-.featureText {
-	margin-left: 18px;
-}
-
-.featureText > h3 {
-	color: $feature-title-color;
-}
-
-.featureText > p {
-	color: $feature-text-color;
-	margin-top: 8px;
-	line-height: 1.5;
 }
 
 @media only screen and (max-width: 992px) {
@@ -634,10 +669,10 @@ footer {
 }
 
 .footer-default {
-	background-color: #000;
+	background-color: #f8f2eb;  // Changed from black to light theme
 
 	h3 {
-		color: white;
+		color: #002a44;  // Changed to dark blue
 	}
 
 	.footerLinks a {
@@ -645,12 +680,12 @@ footer {
 	}
 
 	a {
-		color: #56a8e8;
+		color: #297ec0;  // Changed to more visible blue
 		font-size: 2rem;
 		font-weight: normal;
 
 		&:hover {
-		color: #005f99;
+			color: #005f99;
 		}
 	}
 }
@@ -1022,4 +1057,143 @@ footer {
 		display: block;
 		font-style: italic;
 	}
+}
+
+// Reviews Section
+.reviews-section {
+    grid-area: r;
+    padding: 40px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #f8f2eb;
+    border-radius: 24px;
+
+    @media only screen and (max-width: 768px) {
+        padding: 20px;
+        margin-bottom: 0px;  // Reduced margin-top for mobile
+    }
+
+    h3 {
+        text-align: left;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #002a44;
+    }
+}
+
+.reviews-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 60px;
+
+    @media only screen and (max-width: 768px) {
+        padding: 0 20px;  // Reduced side padding for mobile
+		margin-bottom: 0px;  // Reduced margin-top for mobile
+    }
+}
+
+.reviews-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+    transition: transform 0.5s ease;
+
+    @media only screen and (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.review-box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    border: 1px solid #e6d5c3;
+    border-radius: 16px;
+    padding: 24px;
+    transition: transform 0.3s ease;
+    max-width: 400px;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .review-header {
+        margin-bottom: 12px;
+
+        h3 {
+            color: #002a44;
+            font-size: 1.8rem; // Decreased from 2rem
+            margin: 0 0 8px 0;
+        }
+    }
+
+    .review-author {
+        color: #666;
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+
+    .review-stars {
+        color: #FFD700;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        margin: 12px 0;
+    }
+
+    .review-text {
+        color: #333;
+        font-size: 1.4rem; // Decreased from 1.6rem
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    @media only screen and (max-width: 992px) {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #e6d5c3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #002a44;
+    transition: all 0.3s ease;
+    z-index: 2;
+
+    &:hover {
+        background: white;
+        color: #000;
+    }
+
+    &.prev {
+        left: 0;
+    }
+
+    &.next {
+        right: 0;
+    }
+
+    @media only screen and (max-width: 992px) {
+        display: none; // Hide arrows on mobile
+    }
 }
