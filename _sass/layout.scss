@@ -19,6 +19,10 @@
 
 }
 
+// .subPageBody {
+// 	background-color: #fffcf7;
+// }
+
 .subPageHeaderBackground {
 	background-color: #fff;
 }
@@ -44,7 +48,6 @@
 
 .subPageContainer {
 	grid-template-rows: 115px auto auto auto;
-	background-color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -858,7 +861,7 @@ footer {
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
-	background-color: #fffaf4;
+	// background-color: #fffaf4;
 	border-radius: 8px;
 
 	h2 {
@@ -1196,4 +1199,8 @@ footer {
     @media only screen and (max-width: 992px) {
         display: none; // Hide arrows on mobile
     }
+}
+
+body {
+	background-color: #fffaf4;
 }

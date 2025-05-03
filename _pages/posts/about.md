@@ -2,7 +2,7 @@
 layout: post
 title: What is Not Evil about Not Evil Sudoku? 
 description: Most apps particularly mobile games are crammed with ads to a degree that is decidedly evil. After one particularly frustrating experience, I took things into my own hands and made Not Evil Sudoku with the desire of having a clean, minimalist and ad-free sudoku solving experience.
-short_title: ⛰️ About
+short_title: ⛰️ What's Not Evil?
 include_in_header: false
 ---
 
