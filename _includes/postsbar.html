@@ -2,12 +2,11 @@
 	<h3>Blog</h3>
 
 	<div class="post-grid">
-		{% for page in site.pages %}
-			{% if page.path contains 'posts' %}
-				<div class="post-item">
-					<a href="{{ page.url }}">{{ page.short_title }}</a>
-				</div>
-			{% endif %}
+		{% assign sorted_pages = site.pages | where_exp: "page", "page.path contains 'posts'" | sort: "order" %}
+		{% for page in sorted_pages %}
+			<div class="post-item">
+				<a href="{{ page.url }}">{{ page.short_title }}</a>
+			</div>
 		{% endfor %}
 	</div>
 </div>

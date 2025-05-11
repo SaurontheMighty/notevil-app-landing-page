@@ -4,6 +4,7 @@ title: How to Play Sudoku for the Complete Beginner
 description: People often (wrongly) assume that sudoku is a math game simply because it has numbers. But it's not, in fact, it has absolutely nothing to do with math or numbers. Learn the one simple rule of sudoku with an interactive puzzle.
 short_title: 🧩 How to Play
 include_in_header: false
+order: 2
 ---
 
 # How to Play Sudoku: Your First Solve

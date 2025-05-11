@@ -1,0 +1,49 @@
+<div class="app-card">
+    <div class="app-stats">
+        <div class="stat-item">
+            <div class="stat-header">
+                <span class="stat-name">Monetization</span>
+                <span class="stat-stars">{{ include.monetization_stars }}</span>
+            </div>
+        </div>
+
+        <div class="stat-item">
+            <div class="stat-header">
+                <span class="stat-name">Solving Experience</span>
+                <span class="stat-stars">{{ include.solving_stars }}</span>
+            </div>
+        </div>
+
+        <div class="stat-item">
+            <div class="stat-header">
+                <span class="stat-name">Design</span>
+                <span class="stat-stars">{{ include.design_stars }}</span>
+            </div>
+        </div>
+
+        <div class="stat-item">
+            <div class="stat-header">
+                <span class="stat-name">Features</span>
+                <span class="stat-stars">{{ include.features_stars }}</span>
+            </div>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <span class="feature-name">Leaderboards</span>
+                    <span class="feature-check">{{ include.has_leaderboards | default: "❌" }}</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-name">Input Options</span>
+                    <span class="feature-check">{{ include.has_input_options | default: "❌" }}</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-name">Highlighting</span>
+                    <span class="feature-check">{{ include.has_highlighting | default: "❌" }}</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-name">Hints</span>
+                    <span class="feature-check">{{ include.has_hints | default: "❌" }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

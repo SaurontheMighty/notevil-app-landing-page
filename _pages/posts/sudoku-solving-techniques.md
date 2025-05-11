@@ -4,6 +4,7 @@ title: Solving Sudoku Puzzles with Scanning and Elimination
 description: "Sudoku has only one rule: the numbers 1-9 cannot repeat in any row/column/subgrid. To get you started with solving your first puzzle, there are two intuitive techniques that you can use, scanning and elimination."
 short_title: 🧠 Solving Techniques
 include_in_header: false
+order: 3
 ---
 
 # Sudoku Solving Techniques

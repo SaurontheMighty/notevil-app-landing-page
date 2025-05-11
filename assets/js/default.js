@@ -56,13 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
             prevButton.style.cursor = currentIndex === 0 ? 'default' : 'pointer';
             
             // Disable next button if at end
-            const lastPossibleIndex = allReviews.length - reviewsPerPage;
+            const lastPossibleIndex = allReviews.length - reviewsPerPage - 1;
             nextButton.style.opacity = currentIndex >= lastPossibleIndex ? '0.5' : '1';
             nextButton.style.cursor = currentIndex >= lastPossibleIndex ? 'default' : 'pointer';
         }
 
         function showReviews() {
-            const visibleReviews = allReviews.slice(currentIndex, currentIndex + reviewsPerPage);
+            const visibleReviews = allReviews.slice(currentIndex, currentIndex + reviewsPerPage + 1);
             const reviewsHTML = visibleReviews.map(review => `
                 <div class="review-box">
                     <div class="review-header">
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         function nextSet() {
-            const lastPossibleIndex = allReviews.length - reviewsPerPage;
+            const lastPossibleIndex = allReviews.length - reviewsPerPage - 1;
             if (currentIndex < lastPossibleIndex) {
                 currentIndex += reviewsPerPage;
                 showReviews();

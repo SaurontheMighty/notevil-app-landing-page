@@ -1,0 +1,59 @@
+<div class="app-review-card">
+    <div class="app-review-header" onclick="toggleReview(this)">
+        <div class="header-left">
+            <img class="app-icon" src="{{ include.icon }}" alt="{{ include.name }} icon">
+            <div class="app-info">
+                <h3 class="app-name">{{ include.name }}</h3>
+                <div class="publisher">{{ include.publisher }}</div>
+                <div class="pricing-tags">
+                    <span class="tag">{{ include.pricing }}</span>
+                    {% if include.monetization %}
+                    <span class="tag">{{ include.monetization }}</span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="score-container">
+                <img style="background: transparent;" class="laurel left-laurel" src="/assets/leftLaurel.png" alt="Left laurel">
+                <div class="score">{{ include.score }}</div>
+                <img style="background: transparent;" class="laurel right-laurel" src="/assets/rightLaurel.png" alt="Right laurel">
+            </div>
+            <div class="expand-icon">▼</div>
+        </div>
+    </div>
+    
+    <div class="app-review-content" style="display: none;">
+        {% include app-card.html 
+            name=include.name
+            publisher=include.publisher
+            icon=include.icon
+            score=include.score
+            pricing=include.pricing
+            monetization=include.monetization
+            monetization_stars=include.monetization_stars
+            solving_stars=include.solving_stars
+            design_stars=include.design_stars
+            features_stars=include.features_stars
+            has_leaderboards=include.has_leaderboards
+            has_input_options=include.has_input_options
+            has_highlighting=include.has_highlighting
+            has_hints=include.has_hints 
+        %}
+
+        <div class="review-content">
+            {{ include.content | markdownify }}
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleReview(header) {
+    const card = header.parentElement;
+    const content = card.querySelector('.app-review-content');
+    const isExpanded = content.style.display === 'block';
+    
+    content.style.display = isExpanded ? 'none' : 'block';
+    header.classList.toggle('expanded');
+}
+</script> 
