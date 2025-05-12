@@ -29,7 +29,7 @@ The user identifier is NOT linked to any of the user's personal information. It 
 Post May 20th, 2025, the identifier is no longer used, and no identifier is collected in the app, however this may change in the future.
 
 ## Changes
-Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022 and was last updated on May 7, 2025.
+Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022 and was last updated on May 11, 2025.
 
 ## Contact Us
 Feel free to reach out at: sudoku@notevil.app or tweet at me: @selvarajashish.
