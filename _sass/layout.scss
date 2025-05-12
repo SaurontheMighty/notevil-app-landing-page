@@ -14,7 +14,6 @@
 @media only screen and (max-width: 768px) {
 
 	.app-card {
-		border: 1px solid red;
 		padding: 0px;
 		margin: 0px;
 	}
@@ -1230,6 +1229,11 @@ body {
 		border-radius: 100px;
 		font-size: 1rem;  // Increased from 0.8rem
 		font-weight: 500;
+		width: fit-content;
+	}
+
+	@media only screen and (max-width: 480px) {
+        flex-direction: column;
 	}
 }
 
@@ -1297,7 +1301,7 @@ body {
 @media only screen and (max-width: 768px) {
     .app-card {
         padding: 0px;
-        margin: 0px;
+        margin: 10px;
     }
 }
 
