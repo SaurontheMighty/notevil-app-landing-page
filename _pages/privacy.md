@@ -16,7 +16,7 @@ The data we collect is general information that is not linked to you, such as: a
 
 We aim to collect as little data as possible. Information like that helps us make decisions like: "is it worth it to drop that iOS version?" and "which languages should I try to get the app translated into". Other information like the time taken to complete a particular puzzle are also collected so that the average time to complete a game and other metrics can be calculated. You can turn this off in Settings -> Analytics. 
 
-Ashish Selvaraj developed the analytics solution in-house to minimize information collection. Prior to May 20th, 2025, the analytics service was running on Amazon Web Services and from May 20th, 2025 onwards it largely runs on Cloudflare. 
+Ashish Selvaraj developed the analytics solution in-house to minimize information collection. Prior to May 16th, 2025, the analytics service was running on Amazon Web Services and from May 16th, 2025 onwards it largely runs on Cloudflare. 
 
 However, other websites or applications that are linked to inside the app that are not related to Not Evil Sudoku such as Apple's App Store, translation services and other independent groups may collect data including personal information and users of Not Evil Sudoku should read their privacy policies if they intend to visit or use those services.
 
@@ -26,10 +26,10 @@ The app may link to third party websites in sections such as Settings -> Transla
 ## Identifier
 The user identifier is NOT linked to any of the user's personal information. It is generated using Apple's "IdentifierForVendor" API. It helps us differentiate between users without collecting personal data. This id is common to all the apps on your device which are built by Ashish Selvaraj. More information on it is available in Apple's documentation.
 
-Post May 20th, 2025, the identifier is no longer used, and no identifier is collected in the app, however this may change in the future.
+Post May 16th, 2025, the identifier is no longer used, and no identifier is collected in the app, however this may change in the future.
 
 ## Changes
-Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022 and was last updated on May 11, 2025.
+Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022 and was last updated on May 12, 2025.
 
 ## Contact Us
 Feel free to reach out at: sudoku@notevil.app or tweet at me: @selvarajashish.
