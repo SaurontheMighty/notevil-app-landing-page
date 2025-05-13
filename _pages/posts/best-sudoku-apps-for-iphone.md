@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Best Sudoku Apps for iPhone: A Comprehensive Guide"
-description: A list of the best sudoku apps for iPhone categorized by solving experience, design, ads, in-app purchases and overall feel.
+description: A list of the best sudoku apps for iPhone, comparing Sudoku.com, ▻Sudoku, Good Sudoku, NYT Games Sudoku and Not Evil Sudoku over solving experience, design, ads, in-app purchases and overall feel. 
 short_title: 🌟 Best Sudoku Apps
 thumbnail: /assets/best_sudoku_img.png
 include_in_header: false
@@ -14,13 +14,13 @@ The App Store is a big place and there are hundreds if not thousands of sudoku a
 This is the blog for a sudoku app, so it's going to be biased no matter how hard I try, so instead, I'll just leave Not Evil Sudoku to the end of the post and let you decide if you want to scroll down that far.
 
 # The Best Sudoku Apps for iPhone
-Here's a comparison of some of the most popular sudoku apps for iPhone on a couple different dimensions: 
+Here's a comparison of some of the most popular sudoku apps on iOS over a couple different dimensions: 
 1. <u>monetization</u> - how much does the app cost and what kind of monetization does it have
 2. <u>solving experience</u> - how enjoyable is it to solve a puzzle
 3. <u>design</u> - how intuitive and enjoyable is the user interface
 4. <u>features</u> - how much can you tailor the app to your taste
 
-Now, there's a lot of sudoku apps with hundreds of thousands of installs and a lot of sudoku apps that people claim are beautifully designed, and I can't possibly cover all of them. Instead, I've chosen the middle path: 
+There are a lot of sudoku apps with hundreds of thousands of installs and a lot of sudoku apps that people claim are beautifully designed, and I can't possibly cover all of them. Instead, I've chosen the middle path: 
 1. Two of the most popular sudoku apps off the top of the App Store search results 
 2. Two that are highly reviewed/recommended to me
 3. And finally Not Evil Sudoku since this is after all the Not Evil Blog.
