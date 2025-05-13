@@ -3,6 +3,7 @@ layout: post
 title: "Best Sudoku Apps for iPhone: A Comprehensive Guide"
 description: A list of the best sudoku apps for iPhone categorized by solving experience, design, ads, in-app purchases and overall feel.
 short_title: 🌟 Best Sudoku Apps
+thumbnail: /assets/best_sudoku_img.png
 include_in_header: false
 order: 4
 ---
