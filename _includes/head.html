@@ -12,8 +12,7 @@
 	<meta property="og:image" content="{% if include.thumbnail %}{{ include.thumbnail | relative_url }}{% else %}{{ site.app_icon | relative_url }}{% endif %}">
 	<meta property="og:site_name" content="Not Evil Sudoku Blog" />
 	<meta property="og:locale" content="en_US" />
-
-	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
+	<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}" />
 
 	<!-- Smart App Banner -->
 	{% if site.enable_smart_app_banner %}

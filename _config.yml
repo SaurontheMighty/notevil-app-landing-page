@@ -142,5 +142,6 @@ collections:
 markdown: kramdown
 
 url: "https://notevil.io" 
+baseurl: ""  
 plugins:
   - jekyll-sitemap
