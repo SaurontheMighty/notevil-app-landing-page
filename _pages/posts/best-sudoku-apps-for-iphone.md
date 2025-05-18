@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Best Sudoku Apps for iPhone: A Comprehensive Guide"
+title: "Best Sudoku Apps for iPhone in 2025: A Comprehensive Guide"
 description: A list of the best sudoku apps for iPhone, comparing Sudoku.com, ▻Sudoku, Good Sudoku, NYT Games Sudoku and Not Evil Sudoku over solving experience, design, ads, in-app purchases and overall feel. 
 short_title: 🌟 Best Sudoku Apps
 thumbnail: /assets/best_sudoku_img.png
@@ -13,7 +13,7 @@ The App Store is a big place and there are hundreds if not thousands of sudoku a
 
 This is the blog for a sudoku app, so it's going to be biased no matter how hard I try, so instead, I'll just leave Not Evil Sudoku to the end of the post and let you decide if you want to scroll down that far.
 
-# The Best Sudoku Apps for iPhone
+# The Best Sudoku Apps for iPhone [2025]
 Here's a comparison of some of the most popular sudoku apps on iOS over a couple different dimensions: 
 1. <u>monetization</u> - how much does the app cost and what kind of monetization does it have
 2. <u>solving experience</u> - how enjoyable is it to solve a puzzle
