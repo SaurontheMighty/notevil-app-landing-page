@@ -9,7 +9,7 @@ order: 4
 ---
 
 ## Preface
-The App Store is a big place and there are hundreds if not thousands of sudoku apps or apps that have sudoku in them. This blog post tries its best to look at some of the most popular ones and break them down to help you find the one for you.
+Sudoku puzzles have been popular since the 19th century and there are many hundreds of sudoku apps vying for your attention on the App Store. This blog post tries its best to look at some of the most popular ones and break them down to help you find the one for you.
 
 This is the blog for a sudoku app, so it's going to be biased no matter how hard I try, so instead, I'll just leave Not Evil Sudoku to the end of the post and let you decide if you want to scroll down that far.
 
