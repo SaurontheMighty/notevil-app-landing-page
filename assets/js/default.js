@@ -67,9 +67,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="review-box">
                     <div class="review-header">
                         <h3>${review.title}</h3>
-                        <div class="review-author">${review.author}</div>
+                        <div class="review-meta">
+                            <span class="review-stars">★★★★★</span>
+                            <span>•</span>
+                            <span class="review-author">${review.author}</span>
+                        </div>
                     </div>
-                    <div class="review-stars">★★★★★</div>
                     <p class="review-text">${truncateText(review.content, 190)}</p>
                 </div>
             `).join('');

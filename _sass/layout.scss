@@ -1096,15 +1096,14 @@ footer {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 0 60px;
+    padding: 10px 20px;
     overflow: hidden;  // This ensures content outside container is hidden
 }
 
 .reviews-group {
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 10px;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     
@@ -1115,6 +1114,7 @@ footer {
 
     @media only screen and (max-width: 992px) {
         flex-direction: column;
+		gap: 0px;
         align-items: center;
         width: 100%;
 
@@ -1129,7 +1129,6 @@ footer {
     flex: 1;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(8px);
-    border: 1px solid #e6d5c3;
     border-radius: 16px;
     padding: 24px;
     transition: transform 0.3s ease;
@@ -1140,12 +1139,17 @@ footer {
     }
 
     .review-header {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
 
         h3 {
             color: #002a44;
             font-size: 1.8rem; // Decreased from 2rem
-            margin: 0 0 8px 0;
+            margin: 0;
+        }
+        .review-meta {
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
     }
 
@@ -1153,13 +1157,14 @@ footer {
         color: #666;
         font-size: 1.6rem;
         font-style: italic;
+
     }
 
     .review-stars {
         color: #FFD700;
         font-size: 2rem;
         letter-spacing: 2px;
-        margin: 12px 0;
+        margin: 8px 0;
     }
 
     .review-text {
@@ -1179,6 +1184,7 @@ footer {
         }
     }
 }
+
 
 .carousel-button {
     position: absolute;
