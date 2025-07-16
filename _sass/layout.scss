@@ -1,3 +1,6 @@
+// Add Google Fonts import for handwritten style
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
 .imageWrapper {					// Sets the background image in the header area
 	height: 714px;
 	background: #fffaf4;  // Changed to light theme color
@@ -1251,57 +1254,184 @@ body {
 	justify-content: left;
     
     .app-stats {
-		margin: 0px;
+		display: flex;
+		flex-direction: row;
+		gap: 32px;
+		align-items: flex-start;
+	}
 
-        .stat-item {
-            margin-bottom: 8px;
-            background: rgba(230, 213, 195, 0.5);
-            border-radius: 8px;
-            padding: 8px 12px;
-            
-            .stat-header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 12px;
-                
-                .stat-name {
-                    font-size: 1.4rem;
-                }
-                
-                .stat-stars {
-                    color: #4a3728;
-                    letter-spacing: 2px;
-                    font-size: 1.8rem;
-                }
-            }
-        }
-    }
+	.stat-group, .features-group {
+		flex: 1 1 0;
+		margin-top: 33px;
+	}
+
+	.stat-item {
+		margin-bottom: 8px;
+		background: rgba(230, 213, 195, 0.5);
+		border-radius: 8px;
+		padding: 8px 12px;
+	}
+
+	.stat-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 12px;
+	}
+
+	.stat-name {
+		font-size: 1.4rem;
+	}
+
+	.stat-stars {
+		color: #4a3728;
+		letter-spacing: 2px;
+		font-size: 1.8rem;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.app-stats {
+			flex-direction: column;
+			gap: 0;
+		}
+		.stat-group, .features-group {
+			width: 100%;
+		}
+	}
+
+	.feature-todo-group {
+		padding: 0px;
+	}
 
     .feature-list {
-        margin-top: 8px;
-        padding-left: 16px;
-        
+        padding: 24px 24px 24px 32px;
+        background: #fffaf4;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        font-family: 'Caveat', 'Indie Flower', cursive;
+        font-size: 2rem;
+        border: 2px dashed #c2b280;
+        max-width: 350px;
+        position: relative;
+    }
+
+    .feature-list-title {
+        font-size: 2.2rem;
+        font-family: 'Caveat', cursive;
+        color: #b89c5a;
+        letter-spacing: 1px;
+    }
+
+    .feature-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        position: relative;
+        font-family: inherit;
+        font-size: 1.7rem;
+        color: #4a3728;
+    }
+
+    .feature-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .feature-name {
+        font-family: inherit;
+        font-size: 1.7rem;
+        margin-left: 12px;
+        flex: 1;
+        color: #4a3728;
+        letter-spacing: 0.5px;
+    }
+
+    .feature-check {
+        font-size: 2rem;
+        margin-left: 12px;
+        font-family: inherit;
+        color: #b89c5a;
+    }
+
+    // Hand-drawn checkbox effect
+    .feature-item::before {
+        content: '';
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        border: 2.5px solid #b89c5a;
+        border-radius: 6px;
+        margin-right: 10px;
+        background: #fff;
+        box-shadow: 1px 2px 0px #e6d5c3;
+        position: relative;
+        // border: 2px solid red !important; // DEBUG: Red border for checkbox
+    }
+
+    // Show checkmark if feature is present
+    .feature-item .feature-check {
+        position: absolute;
+        left: -10px;
+        top: 0px;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem;
+        color: #4a3728;
+        pointer-events: none;
+        // border: 2px solid blue !important; // DEBUG: Blue border for check/cross container
+    }
+
+    // Hand-drawn checkmark
+    .feature-list.dotted-checks .feature-item .feature-check[data-checked="partial"]::after,
+    .feature-list.dotted-checks .feature-item .feature-check[data-checked="True"]::after,
+    .feature-list.dotted-checks .feature-item .feature-check[data-checked="1"]::after {
+        border-left: 3px dotted #4a3728;
+        border-bottom: 3px dotted #4a3728;
+    }
+
+    // Default solid checkmark
+    .feature-item .feature-check[data-checked="true"]::after,
+    .feature-item .feature-check[data-checked="True"]::after,
+    .feature-item .feature-check[data-checked="1"]::after {
+        content: '';
+        display: block;
+        width: 14px;
+        height: 8px;
+        border-left: 3px solid #4a3728;
+        border-bottom: 3px solid #4a3728;
+        transform: rotate(-45deg);
+        position: absolute;
+        left: 5px;
+        top: 7px;
+        border-radius: 2px;
+        box-shadow: 0 1px 0 #b89c5a;
+    }
+
+    // Remove cross for unchecked state
+    .feature-item .feature-check[data-checked="false"]::after,
+    .feature-item .feature-check[data-checked="False"]::after,
+    .feature-item .feature-check:not([data-checked])::after,
+    .feature-item .feature-check[data-checked="false"]::before,
+    .feature-item .feature-check[data-checked="False"]::before,
+    .feature-item .feature-check:not([data-checked])::before {
+        content: none;
+        display: none;
+    }
+
+    // Responsive adjustments
+    @media only screen and (max-width: 768px) {
+        .feature-list {
+            max-width: 100%;
+            font-size: 1.5rem;
+            padding: 16px 8px 16px 18px;
+        }
         .feature-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 8px 0;
             font-size: 1.2rem;
-            color: #4a3728;
-            border-bottom: 1px solid rgba(74, 55, 40, 0.1);
-            
-            &:last-child {
-                border-bottom: none;
-            }
-            
-            .feature-name {
-                font-weight: normal;
-            }
-            
-            .feature-check {
-                font-size: 1.4rem;
-            }
+        }
+        .feature-list::before {
+            font-size: 1.5rem;
         }
     }
 }
@@ -1508,4 +1638,33 @@ body {
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .feature-todo-group {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .feature-list {
+        width: 100%;
+        padding: 16px 0 16px 0;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+}
+
+.feature-item .feature-check[data-checked="partial"]::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 10px;
+    border-left: 2px dashed #4a3728;
+    border-bottom: 2px dashed #4a3728;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    // border-radius: 2px;
+    // box-shadow: 0 1px 0 #b89c5a;
 }

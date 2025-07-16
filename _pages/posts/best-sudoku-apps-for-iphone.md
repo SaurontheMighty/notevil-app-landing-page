@@ -60,10 +60,10 @@ Overall, plenty of bells and whistles.
     solving_stars="★★☆☆☆"
     design_stars="★★☆☆☆"
     features_stars="★★★★☆"
-    has_leaderboards="✅"
-    has_input_options="✅"
-    has_highlighting="✅"
-    has_hints="✅"
+    has_leaderboards=true
+    has_input_options=true
+    has_highlighting=true
+    has_hints=true
     content=review_content
 %}
 
@@ -95,8 +95,10 @@ The app technically has a hint symbol but if you tap it, it simply fills in the 
     solving_stars="★☆☆☆☆"
     design_stars="★☆☆☆☆"
     features_stars="★☆☆☆☆"
-    has_leaderboards="✅"
-    has_highlighting="✅"
+    has_leaderboards=true
+    has_highlighting=true
+    has_hints=false
+    has_input_options=false
     content=review_content_2
 %}
 
@@ -130,9 +132,10 @@ The app has a really good hint and learning system and a lot of customization al
     solving_stars="★★★☆☆"
     design_stars="★★★★☆"
     features_stars="★★★★☆"
-    has_highlighting="✅"
-    has_leaderboards="✅"
-    has_hints="✅"
+    has_highlighting=true
+    has_leaderboards=true
+    has_hints=true
+    has_input_options=false
     content=review_content_3
 %}
 
@@ -163,8 +166,10 @@ The app is quite bare or in nicer terms, minimal. They recently added highlighti
     solving_stars="★★★☆☆"
     design_stars="★★☆☆☆"
     features_stars="★☆☆☆☆"
-    has_highlighting="✅"
-    has_hints="✅"
+    has_highlighting=true
+    has_leaderboards=false
+    has_hints=true
+    has_input_options=false
     content=review_content_4
 %}
 
@@ -173,7 +178,7 @@ The app is quite bare or in nicer terms, minimal. They recently added highlighti
 #### Monetization
 The app has no ads, and as a consequence, no tracking. The daily puzzle is free to play and a one-time in-app purchase unlocks unlimited games, charts and themes for $4.99 USD. No game features, difficulties or assists are behind a paywall.
 
-Almost all the app's negative reviews are related to not being able to play unlimited games for free so I will take a star off for monetization strategy. I still think it's a pretty fair deal since most of the app's users are on the free version.
+Almost all the app's negative reviews are related to not being able to play unlimited games for free so I will take a star off for monetization strategy. Most of the app's users are on the free version.
 
 #### Design & Experience
 It feels weird to write about the design and solving experience of Not Evil Sudoku as the person who designed and built it. So, instead I'll just insert a review from the App Store.
@@ -210,9 +215,10 @@ The app has most features you'd want in a sudoku app: Daily Puzzles, Highlighter
     solving_stars="★★★★★"
     design_stars="★★★★★"
     features_stars="★★★★☆"
-    has_leaderboards="✅"
-    has_input_options="✅"
-    has_highlighting="✅"
+    has_leaderboards=true
+    has_input_options=true
+    has_highlighting=true
+    has_hints="partial"
     content=review_content_5
 %}
 

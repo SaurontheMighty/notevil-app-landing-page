@@ -1,49 +1,54 @@
 <div class="app-card">
     <div class="app-stats">
-        <div class="stat-item">
-            <div class="stat-header">
-                <span class="stat-name">Monetization</span>
-                <span class="stat-stars">{{ include.monetization_stars }}</span>
-            </div>
-        </div>
-
-        <div class="stat-item">
-            <div class="stat-header">
-                <span class="stat-name">Solving Experience</span>
-                <span class="stat-stars">{{ include.solving_stars }}</span>
-            </div>
-        </div>
-
-        <div class="stat-item">
-            <div class="stat-header">
-                <span class="stat-name">Design</span>
-                <span class="stat-stars">{{ include.design_stars }}</span>
-            </div>
-        </div>
-
-        <div class="stat-item">
-            <div class="stat-header">
-                <span class="stat-name">Features</span>
-                <span class="stat-stars">{{ include.features_stars }}</span>
-            </div>
+        <div class="feature-todo-group">
+            <span class="feature-list-title">Features</span>
             <div class="feature-list">
                 <div class="feature-item">
                     <span class="feature-name">Leaderboards</span>
-                    <span class="feature-check">{{ include.has_leaderboards | default: "❌" }}</span>
+                    <span class="feature-check" data-checked="{{ include.has_leaderboards }}"></span>
                 </div>
                 <div class="feature-item">
                     <span class="feature-name">Input Options</span>
-                    <span class="feature-check">{{ include.has_input_options | default: "❌" }}</span>
+                    <span class="feature-check" data-checked="{{ include.has_input_options }}"></span>
                 </div>
                 <div class="feature-item">
                     <span class="feature-name">Highlighting</span>
-                    <span class="feature-check">{{ include.has_highlighting | default: "❌" }}</span>
+                    <span class="feature-check" data-checked="{{ include.has_highlighting }}"></span>
                 </div>
                 <div class="feature-item">
                     <span class="feature-name">Hints</span>
-                    <span class="feature-check">{{ include.has_hints | default: "❌" }}</span>
+                    <span class="feature-check" data-checked="{{ include.has_hints }}"></span>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="stat-group">
+            <div class="stat-item">
+                <div class="stat-header">
+                    <span class="stat-name">Monetization</span>
+                    <span class="stat-stars">{{ include.monetization_stars }}</span>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-header">
+                    <span class="stat-name">Solving Experience</span>
+                    <span class="stat-stars">{{ include.solving_stars }}</span>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-header">
+                    <span class="stat-name">Design</span>
+                    <span class="stat-stars">{{ include.design_stars }}</span>
+                </div>
+            </div>
+
+            <div class="stat-item"><div class="stat-header">
+                <span class="stat-name">Features</span>
+                <span class="stat-stars">{{ include.features_stars }}</span>
+            </div></div>
+        </div> <!-- End of stat-group -->
+        
+    </div> <!-- End of app-stats -->
+    
 </div> 
