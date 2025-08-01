@@ -7,7 +7,7 @@ include_in_header: false
 order: 3
 ---
 
-# Sudoku Solving Techniques
+{% include blog-title.html title="Sudoku Solving Techniques" %}
 <div class="hint-box">
   New to Sudoku? Learn how to play with an interactive puzzle in the <a href="/posts/how-to-play">how to play guide 🔗</a>
 </div>
@@ -16,7 +16,7 @@ To get you started with solving your first puzzle, there are two intuitive techn
 
 Quick Terminology: a cell is a single square in the grid, a house is a 3x3 group of cells. In Not Evil Sudoku, the houses are grouped together and you can see them clearly below. There are a total of 9 houses in a 9x9 grid.
 
-## Scanning
+{% include blog-subtitle.html title="Scanning" %}
 The most basic technique is scanning - systematically looking for possible numbers that can go in each empty cell. 
 
 {% include board.html 
@@ -43,7 +43,7 @@ The most basic technique is scanning - systematically looking for possible numbe
 %}
 
 
-## Elimination
+{% include blog-subtitle.html title="Elimination" %}
 
 {% include board.html 
   image="/assets/elimination1.png"

@@ -8,28 +8,82 @@ include_in_header: false
 order: 4
 ---
 
-## Preface
+{% include blog-title.html title="The Best Sudoku Apps for iPhone in 2025" %}
 Sudoku puzzles have been popular since the 19th century and there are many hundreds of sudoku apps vying for your attention on the App Store. This blog post tries its best to look at some of the most popular ones and break them down to help you find the one for you.
 
-This is the blog for a sudoku app, so it's going to be biased no matter how hard I try, so instead, I'll just leave Not Evil Sudoku to the end of the post and let you decide if you want to scroll down that far.
+{% include blog-subtitle.html title="The Criteria" %}
+<div class="no-bullets">
+    <div>💰 <strong>monetization</strong>: how much does the app cost and what kind of monetization does it have</div>
+    <div>🧠 <strong>solving experience</strong>: how enjoyable is it to solve a puzzle</div>
+    <div>🎨 <strong>design</strong>: how intuitive and enjoyable is the user interface</div>
+    <div>🔧 <strong>features</strong>: how much can you tailor the app to your taste</div>
+</div>
 
-# The Best Sudoku Apps for iPhone [2025]
-Here's a comparison of some of the most popular sudoku apps on iOS over a couple different dimensions: 
-1. <u>monetization</u> - how much does the app cost and what kind of monetization does it have
-2. <u>solving experience</u> - how enjoyable is it to solve a puzzle
-3. <u>design</u> - how intuitive and enjoyable is the user interface
-4. <u>features</u> - how much can you tailor the app to your taste
-
-There are a lot of sudoku apps with hundreds of thousands of installs and a lot of sudoku apps that people claim are beautifully designed, and I can't possibly cover all of them. Instead, I've chosen the middle path: 
-1. Two of the most popular sudoku apps off the top of the App Store search results 
-2. Two that are highly reviewed/recommended to me
-3. And finally Not Evil Sudoku since this is after all the Not Evil Blog.
+There are a **LOT** of sudoku apps on the App Store and I can't possibly cover them all. Instead, I've chosen some of the most popular apps that feature prominently in the App Store and which are highly recommended to me.
 
 If your app appears here and you disagree with my thoughts, feel free to reach out to me: sudoku [at] notevil.app and I'll be happy to remove it.
 
-<div class="note-box">
-This analysis is as of 2025-05-04. These apps may have subseqent updates that change the app's features and monetization.
+To save you some scrolling, I've left the results of my analysis at the top and the details below.
+
+{% include blog-subtitle.html title="The Best Apps" %}
+If you just want to play a game of sudoku, you can't go wrong with any of the five. This is the blog for Not Evil Sudoku, but it may not be the right app for you. 
+
+The app that works best for you depends on your thoughts on Cost versus Design. If you only plan on playing a puzzle a day or you value a well-designed app then Not Evil Sudoku might be a good fit for you. Here's a breakdown:
+
+<div class="recommendation-container">
+    <div class="recommended-apps">
+        <span class="recommended-app" style="--index: 0; --offset-x: 100%; --offset-y: -5px;">
+            <img class="recommended-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/f4/72/49f472e9-1fa6-676e-5773-84f6a037ebd4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/460x0w.webp" alt="Sudoku.com icon">
+        </span>
+    </div>
+    <div class="recommendation-text">
+        <strong>Cost-Focus:</strong> 
+        If you don't want to pay a dollar and you don't mind seeing ads then Sudoku.com is all you need.
+    </div>
 </div>
+<div class="recommendation-container">
+    <div class="recommended-apps">
+        <span class="recommended-app" style="--index: 1; --offset-x: 50%; --offset-y: -15px;">
+            <img class="recommended-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/c3/f8/eb/c3f8ebc3-dc42-f780-29e6-33b4d9eda52c/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp" alt="Good Sudoku icon">
+        </span>
+        <span class="recommended-app" style="--index: 0; --offset-x: 50%; --offset-y: 10px;">
+            <img class="recommended-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/9f/1b/109f1b0c-4c8d-2b13-67ed-5c5d73c5b7c6/Primary-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/460x0w.webp" alt="Not Evil Sudoku icon">
+        </span>
+    </div>
+    <div class="recommendation-text">
+        <p><strong>Design-Focus:</strong> If you're looking for an app that feels like what a sudoku app designed by Apple would feel like, Not Evil Sudoku is probably the best fit. If you're looking for a more opinionated design, Good Sudoku is probably a good fit.</p>
+    </div>
+</div>
+
+If you're already a subscriber to the NYT Games app and not looking for a lot of customization, NYT Games Sudoku is worth trying out.
+<div class="recommendation-container">
+    <div class="recommended-apps">
+        <span class="recommended-app" style="--index: 0; --offset-x: 100%; --offset-y: -5px;">
+            <img class="recommended-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fd/97/74/fd977409-2726-cce9-6833-9ad744d7591c/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/460x0w.webp" alt="NYT Games Sudoku icon">
+        </span>
+    </div>
+    <div class="recommendation-text">
+        <strong>NYT Subscriber:</strong> 
+        Basic but probably good enough. For example something I really need is the ability to lock numbers so that I can place them in several cells at once which this app doesn't have.
+    </div>
+</div>
+
+And lastly, since it feels mean to single out ▻Sudoku, if you really like wooden themes in your apps then I suppose you should go check it out.
+
+<div class="recommendation-container">
+    <div class="recommended-apps">
+        <span class="recommended-app" style="--index: 0; --offset-x: 100%; --offset-y: -5px;">
+            <img class="recommended-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f2/04/7f/f2047f1c-0616-1a00-bab6-4b32d8d1acc3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/460x0w.webp" alt="▻Sudoku icon">
+        </span>
+    </div>
+    <div class="recommendation-text">
+        <strong>▻Sudoku:</strong> 
+        For those who were beavers in a past life 🪵 🦫
+    </div>
+</div>
+
+{% include blog-subtitle.html title="App Breakdowns" %}
+Tap an app to see how it scores across monetization, design, solving experience and features.
 
 <!-- // SUDOKU.COM -->
 {% capture review_content %}
@@ -222,59 +276,8 @@ The app has most features you'd want in a sudoku app: Daily Puzzles, Highlighter
     content=review_content_5
 %}
 
-## Concluding Thoughts
-If you just want to play a game of sudoku, you can't go wrong with any of the five. But, here are some closing recommendations based on what your thoughts are on the Cost-Design trade-off:
-
-<div class="recommendation-container">
-    <div class="recommended-apps">
-        <span class="recommended-app" style="--index: 0; --offset-x: 100%; --offset-y: -5px;">
-            <img class="recommended-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/f4/72/49f472e9-1fa6-676e-5773-84f6a037ebd4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/460x0w.webp" alt="Sudoku.com icon">
-        </span>
-    </div>
-    <div class="recommendation-text">
-        <strong>Cost-Focus:</strong> 
-        If you don't want to pay a dollar and you don't mind seeing ads then Sudoku.com is all you need.
-    </div>
-</div>
-<div class="recommendation-container">
-    <div class="recommended-apps">
-        <span class="recommended-app" style="--index: 1; --offset-x: 50%; --offset-y: -15px;">
-            <img class="recommended-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/c3/f8/eb/c3f8ebc3-dc42-f780-29e6-33b4d9eda52c/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp" alt="Good Sudoku icon">
-        </span>
-        <span class="recommended-app" style="--index: 0; --offset-x: 50%; --offset-y: 10px;">
-            <img class="recommended-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/9f/1b/109f1b0c-4c8d-2b13-67ed-5c5d73c5b7c6/Primary-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/460x0w.webp" alt="Not Evil Sudoku icon">
-        </span>
-    </div>
-    <div class="recommendation-text">
-        <p><strong>Design-Focus:</strong> If you're looking for an app that feels like what a sudoku app designed by Apple would feel like, Not Evil Sudoku is probably the best fit. If you're looking for a more opinionated design, Good Sudoku is probably a good fit.</p>
-    </div>
-</div>
-
-And finally if you're already a subscriber to the NYT Games app and not looking for a lot of customization, NYT Games Sudoku is probably all you need. 
-<div class="recommendation-container">
-    <div class="recommended-apps">
-        <span class="recommended-app" style="--index: 0; --offset-x: 100%; --offset-y: -5px;">
-            <img class="recommended-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fd/97/74/fd977409-2726-cce9-6833-9ad744d7591c/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/460x0w.webp" alt="NYT Games Sudoku icon">
-        </span>
-    </div>
-    <div class="recommendation-text">
-        <strong>NYT Subscriber:</strong> 
-        Basic but probably good enough. For example something I really need is the ability to lock numbers so that I can place them in several cells at once but for a lot of people this app covers the bases.
-    </div>
-</div>
-
-And lastly, since it feels mean to single out ▻Sudoku, if you really like wooden themes in your apps then I suppose you should go check it out.
-
-<div class="recommendation-container">
-    <div class="recommended-apps">
-        <span class="recommended-app" style="--index: 0; --offset-x: 100%; --offset-y: -5px;">
-            <img class="recommended-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f2/04/7f/f2047f1c-0616-1a00-bab6-4b32d8d1acc3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/460x0w.webp" alt="▻Sudoku icon">
-        </span>
-    </div>
-    <div class="recommendation-text">
-        <strong>▻Sudoku:</strong> 
-        For those who were beavers in a past life.
-    </div>
+<div class="note-box">
+This analysis is as of 2025-05-04. These apps may have subseqent updates that change the app's features and monetization.
 </div>
 
 Thanks for reading!

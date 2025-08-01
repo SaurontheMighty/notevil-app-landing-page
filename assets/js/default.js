@@ -120,6 +120,45 @@ document.addEventListener('DOMContentLoaded', function() {
         // Initialize reviews
         initializeReviews();
     }
+
+    // Signature typing effect
+    const signatureLink = document.querySelector('.footer-signature a');
+    if (signatureLink) {
+        const letters = signatureLink.querySelectorAll('.signature-text span:not(.cursor)');
+        const cursor = signatureLink.querySelector('.signature-text .cursor');
+        let typingTimeouts = [];
+        let cursorInterval;
+
+        function showLetters() {
+            // Show cursor first
+            cursor.classList.add('visible');
+            
+            // Start typing after a brief pause
+            setTimeout(() => {
+                letters.forEach((span, i) => {
+                    typingTimeouts[i] = setTimeout(() => {
+                        span.classList.add('visible');
+                    }, i * 80); // Slightly slower for more realistic typing
+                });
+            }, 200);
+        }
+
+        function hideLetters() {
+            typingTimeouts.forEach(timeout => clearTimeout(timeout));
+            typingTimeouts = [];
+            letters.forEach(span => {
+                span.classList.remove('visible');
+            });
+            cursor.classList.remove('visible');
+        }
+
+        signatureLink.addEventListener('mouseenter', showLetters);
+        signatureLink.addEventListener('focus', showLetters);
+        signatureLink.addEventListener('mouseleave', hideLetters);
+        signatureLink.addEventListener('blur', hideLetters);
+        // Hide letters initially
+        hideLetters();
+    }
 });
 
 async function getTopFiveStarReviews() {

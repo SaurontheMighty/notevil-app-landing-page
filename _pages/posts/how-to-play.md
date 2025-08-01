@@ -8,10 +8,10 @@ include_in_header: false
 order: 2
 ---
 
-# How to Play Sudoku: Your First Solve
+{% include blog-title.html title="How to Play Sudoku: Your First Solve" %}
 People often (wrongly) assume that sudoku is a math game simply because it has numbers. But it's not, in fact, it has absolutely nothing to do with math, to prove this point, let's look at a simple 4x4 grid of emojis.
 
-#### The Rules
+{% include blog-subtitle.html title="Sudoku Rules!" %}
 1. No row can have the same emoji repeated.
 2. No column can have the same emoji repeated.
 3. No 2x2 subgrid can have the same emoji repeated.
@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-### Sudoku Rules!
+{% include blog-subtitle.html title="Going Further" %}
 Now that you've solved your first sudoku-esque puzzle, let's look at the rules again but applied to a 9x9 grid of numbers. Really, there is only one rule: the numbers 1-9 cannot repeat in any group: row/column/subgrid.
 <br>
 
@@ -333,9 +333,9 @@ Now that you've solved your first sudoku-esque puzzle, let's look at the rules a
 {% include board.html 
   image="/assets/gridexample.png"
   alt="Sudoku rules" 
-  text="The numbers 1-9 each only appear once in each:<br>&nbsp;&nbsp;&nbsp;1. row<br>&nbsp;&nbsp;&nbsp;2. column<br>&nbsp;&nbsp;&nbsp;3. 3x3 subgrid (also called a house)"
+  text="The numbers 1-9 each only appear once in each:<br>&nbsp;&nbsp;&nbsp;1. row<br>&nbsp;&nbsp;&nbsp;2. column<br>&nbsp;&nbsp;&nbsp;3. 3x3 subgrid (also called a house)<br><br>Try your first sudoku puzzle on the Not Evil Sudoku app!
+"
 %}
-
 
 <div class="hint-box">
   <div class="hint-content">

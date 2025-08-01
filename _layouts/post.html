@@ -18,8 +18,14 @@
             <div class="page">
                 {% include postcol.html %}
                 <article class="page-left markdown-body">
+                    {% include blog-title.html title=page.title %}
                     {{ content }}
                     <a class="mobile-download-link" href="https://apps.apple.com/us/app/not-evil-sudoku/id1614071642">Download Not Evil Sudoku for iPhone 🪄</p></a>
+                    <!-- <div class="downloadButtonsContainerAlwaysShow mobile-download-link">
+                        <div class="appStoreLinkWrapper">
+                            <a class="appStoreLink" href="{{site.appstore_link}}"><img src="/assets/appstore.png"></a>
+                        </div>
+                    </div> -->
                 </article>
                 
             </div>
