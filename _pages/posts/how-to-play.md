@@ -340,7 +340,7 @@ Now that you've solved your first sudoku-esque puzzle, let's look at the rules a
 
 <div class="hint-box">
   <div class="hint-content">
-    <p>Want to learn how to solve harder puzzles? Check out the guide on <a href="/posts/sudoku-solving-techniques" class="hint-link">some intuitive solving techniques</a></p>
+    Now you're ready for some intuitive techniques to get you solving your first sudoku puzzles: <a href="/posts/scanning-in-sudoku" class="hint-link">scanning</a> and <a href="/posts/elimination-in-sudoku" class="hint-link">elimination</a>.
   </div>
 </div>
 

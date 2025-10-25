@@ -946,6 +946,17 @@ footer {
 	  .post-item {
 		border-radius: 8px;
 		padding-bottom: 8px;
+		
+		a {
+		  font-size: 1.8rem;
+		  color: #297ec0;
+		  text-decoration: none;
+		  
+		  &:hover {
+			color: #1a5a8a;
+			text-decoration: underline;
+		  }
+		}
 	  }
 	}
   }
