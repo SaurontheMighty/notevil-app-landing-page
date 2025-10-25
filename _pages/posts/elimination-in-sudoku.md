@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beginner Techniques - Eliminating Candidates in Sudoku
-description: "Learn the elimination technique for solving sudoku puzzles. Use process of elimination to find the only possible number for each cell."
+description: "Elimination involves noting down the possibilites for a cell in a sudoku puzzle and eliminating conflicting numbers that appear in the same row, column or house."
 short_title: 🙅 Elimination
 include_in_header: false
 order: 5

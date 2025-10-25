@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beginner Techniques - Scanning in Sudoku
-description: "Scanning is the most basic technique for solving sudoku puzzles. It involves systematically looking for possible numbers that can go in each empty cell."
+description: "Scanning is the most basic technique for solving sudoku puzzles. It involves systematically looking for possible numbers that can go in each empty cell while scanning the puzzle."
 short_title: 👀 Scanning
 include_in_header: false
 order: 4
