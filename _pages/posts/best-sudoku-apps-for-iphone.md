@@ -214,7 +214,7 @@ The app is quite bare or in nicer terms, minimal. They recently added highlighti
     publisher="The New York Times"
     icon="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fd/97/74/fd977409-2726-cce9-6833-9ad744d7591c/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/460x0w.webp"
     score="3.5"
-    pricing="Free Trial"
+    pricing="Free"
     monetization="Subscription"
     monetization_stars="★★★★☆"
     solving_stars="★★★☆☆"

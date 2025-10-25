@@ -1,1 +1,1 @@
-<h2 class="blog-subtitle">{{ include.title }}</h2> 
+<h2 class="blog-subtitle" id="{{ include.title | slugify }}"><a href="#{{ include.title | slugify }}" class="header-link" target="_self">{{ include.title }}</a></h2> 

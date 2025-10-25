@@ -51,9 +51,9 @@ features                                  :
     description                           : Powerful customization to tailor your experience.
     fontawesome_icon_name                 : wrench
 
-  - title                                 : Notes
-    description                           : Keep track of which numbers you think may belong in a square.
-    fontawesome_icon_name                 : clipboard
+  - title                                 : Hints
+    description                           : Stuck? Shake your phone to reveal a strategy you might've missed.
+    fontawesome_icon_name                 : life-ring
 
   - title                                 : Streak
     description                           : Develop a daily sudoku habit and keep track of your streak.
