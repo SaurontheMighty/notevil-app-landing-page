@@ -5,7 +5,8 @@ description: A list of the best sudoku apps for iPhone, comparing Sudoku.com, â–
 short_title: ðŸŒŸ Best Sudoku Apps
 thumbnail: /assets/best_sudoku_img.png
 include_in_header: false
-order: 4
+order: 3
+category: "General"
 ---
 
 {% include blog-title.html title="The Best Sudoku Apps for iPhone in 2025" %}

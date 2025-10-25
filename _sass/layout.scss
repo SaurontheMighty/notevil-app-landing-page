@@ -1,6 +1,11 @@
 // Add Google Fonts import for handwritten style
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
+// Add strikethrough utility class
+.strikethrough {
+  text-decoration: line-through;
+}
+
 .imageWrapper {					// Sets the background image in the header area
 	height: 714px;
 	background: #fffaf4;  // Changed to light theme color
@@ -695,7 +700,7 @@ footer {
 
 	a {
 		color: #297ec0;  // Changed to more visible blue
-		font-size: 2rem;
+		font-size: 1.6rem;
 		font-weight: normal;
 
 		&:hover {
@@ -720,7 +725,7 @@ footer {
 
 	a {
 		color: #297ec0;
-		font-size: 2rem;
+		font-size: 1.6rem;
 		font-weight: normal;
 
 		&:hover {
@@ -940,7 +945,7 @@ footer {
   
 	  .post-item {
 		border-radius: 8px;
-		padding-bottom: 15px;
+		padding-bottom: 8px;
 	  }
 	}
   }
@@ -985,6 +990,36 @@ footer {
 		padding: 15px;
 		border-radius: 6px;
 		margin-bottom: 10px;
+		
+		h3 {
+			color: #002a44;
+			font-family: inherit;
+			font-size: 1.7rem;
+			font-weight: normal;
+			margin: 30px 0 8px 0;
+			padding-top: 20px;
+			border-top: 1px solid #c2b280;
+			
+			&:first-of-type {
+				margin-top: 0;
+				padding-top: 0;
+				border-top: none;
+			}
+		}
+		
+		.category-posts {
+			margin-left: 20px;
+		}
+		
+		.category-heading {
+			color: #002a44;
+			font-family: inherit;
+			font-size: 1.7rem;
+			font-weight: normal;
+			margin: 30px 0 8px 0;
+			padding-top: 20px;
+			border-top: 1px solid #c2b280;
+		}
 	}
 
 	a {
@@ -992,7 +1027,7 @@ footer {
 		display: block;
 		white-space: nowrap;
 		line-height: 1.2;
-		font-size: 1.7rem;
+		font-size: 1.6rem;
 		margin-bottom: 8px;
 
 		&:hover {
@@ -1091,7 +1126,6 @@ footer {
 	padding: 16px;
 	margin: 16px 0;
 	position: relative;
-	font-style: italic;
 }
   
 .hint-box::before {
@@ -1124,6 +1158,38 @@ footer {
   font-size: 12px;
   font-weight: bold;
   color: #0066cc;
+}
+
+.terminology-box {
+  background-color: #f0f8f0;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 24px 0;
+  position: relative;
+}
+
+.terminology-box::before {
+  content: "TERMINOLOGY";
+  position: absolute;
+  top: -10px;
+  left: 16px;
+  background-color: #f0f8f0;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #006600;
+}
+
+.terminology-box hr,
+.terminology-content hr {
+  border: none !important;
+  border-top: 2px dashed #006600 !important;
+  margin: 8px 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  opacity: 0.3 !important;
 }
 
 .tip-content {

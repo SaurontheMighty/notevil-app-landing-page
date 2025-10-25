@@ -1,12 +1,41 @@
 <section class="page-right posts-column">
     <div class="posts-list">
         <h2>Posts</h2>
-        {% assign post_pages = site.pages | where_exp: "page", "page.url contains 'posts'" | sort: "order" %}
-        {% for post in post_pages%}
+        
+        <!-- General/Featured Posts (Top Level) -->
+        {% assign general_posts = site.pages | where_exp: "page", "page.url contains 'posts'" | where: "category", "General" | sort: "order" %}
+        {% for post in general_posts %}
             {% if post.url != '/posts/' %}
                 <a href="{{ post.url }}" target="_self">{{ post.short_title }}</a>
             {% endif %}
         {% endfor %}
+        
+        <!-- Dynamic Categories Section -->
+        {% assign all_categories = site.pages | where_exp: "page", "page.url contains 'posts'" | map: "category" | uniq | compact %}
+        {% for category in all_categories %}
+            {% unless category == "General" %}
+                {% assign category_posts = site.pages | where_exp: "page", "page.url contains 'posts'" | where: "category", category | sort: "order" %}
+                {% if category_posts.size > 0 %}
+                    <h3 class="category-heading" style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #c2b280; font-weight: bold; font-size: 1.7rem; color: #6b5433; font-family: Georgia, Times, serif;">{{ category }}</h3>
+                    <div class="category-posts" style="border-left: 3px solid #c2b280; padding-left: 12px; margin-left: 0;">
+                        {% for post in category_posts %}
+                            <a href="{{ post.url }}" target="_self">{{ post.short_title }}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endunless %}
+        {% endfor %}
+        
+        <!-- Future sections can be added here -->
+        <!-- 
+        {% assign app_reviews = site.pages | where_exp: "page", "page.url contains 'posts'" | where: "category", "App Reviews" | sort: "order" %}
+        {% if app_reviews.size > 0 %}
+            <h3>App Reviews</h3>
+            {% for post in app_reviews %}
+                <a href="{{ post.url }}" target="_self">{{ post.short_title }}</a>
+            {% endfor %}
+        {% endif %}
+        -->
     </div>
     <div class="downloadButtonsContainerAlwaysShow">
         <div class="appStoreLinkWrapper">

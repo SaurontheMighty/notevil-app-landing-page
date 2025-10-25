@@ -5,6 +5,7 @@ description: Most apps particularly mobile games are crammed with ads to a degre
 short_title: ⛰️ What's Not Evil?
 include_in_header: false
 order: 1
+category: "General"
 ---
 
 {% include blog-title.html title="Not Evil Sudoku" %}

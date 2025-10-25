@@ -6,6 +6,7 @@ short_title: 🧩 How to Play
 thumbnail: /assets/how_to_play_img.png
 include_in_header: false
 order: 2
+category: "General"
 ---
 
 {% include blog-title.html title="How to Play Sudoku: Your First Solve" %}

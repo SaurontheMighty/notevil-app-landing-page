@@ -1,11 +1,18 @@
 <div class="blog-container">
 	<h3>Blog</h3>
-
 	<div class="post-grid">
-		{% assign sorted_pages = site.pages | where_exp: "page", "page.path contains 'posts'" | sort: "order" %}
-		{% for page in sorted_pages %}
+		{% assign all_categories = site.pages | where_exp: "page", "page.path contains 'posts'" | map: "category" | uniq | compact %}
+		{% for category in all_categories %}
 			<div class="post-item">
-				<a href="{{ page.url }}">{{ page.short_title }}</a>
+				<h4 class="category-heading" style="margin-top: 0; padding-top: 0; border-top: none; font-weight: bold; font-size: 1.7rem; color: #6b5433; font-family: Georgia, Times, serif;">{{ category }}</h4>
+				<div class="category-posts" style="border-left: 3px solid #c2b280; padding-left: 12px; margin-left: 0; margin-top: 10px;">
+					{% assign category_posts = site.pages | where_exp: "page", "page.path contains 'posts'" | where: "category", category | sort: "order" %}
+					{% for page in category_posts %}
+						<div class="post-item">
+							<a href="{{ page.url }}">{{ page.short_title }}</a>
+						</div>
+					{% endfor %}
+				</div>
 			</div>
 		{% endfor %}
 	</div>
