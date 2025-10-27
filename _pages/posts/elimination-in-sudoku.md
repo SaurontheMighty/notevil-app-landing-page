@@ -15,7 +15,7 @@ category: "Techniques"
 
 {% include sudoku-terminology.html %}
 
-If you haven't learned scanning yet, start with the <a href="/posts/scanning">scanning technique</a> first!
+If you haven't learned scanning yet, start with the <a href="/posts/scanning-in-sudoku">scanning technique</a> first!
 
 {% include blog-subtitle.html title="What's Elimination" %}
 
@@ -37,3 +37,5 @@ If you haven't learned scanning yet, start with the <a href="/posts/scanning">sc
 %}
 
 Now that you've mastered both scanning and elimination, you have the fundamental tools to solve most easy sudoku puzzles! 
+
+You're ready to graduate to slightly trickier puzzles. Next up, <a href="/posts/hidden-singles-in-sudoku">hidden singles</a>.

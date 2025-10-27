@@ -41,4 +41,4 @@ The most basic technique is scanning - systematically looking for possible numbe
   text="Scanning is not limited to rows, we can also scan columns!<br><br>Now that we filled in the 3s of the first two houses in our first column of houses, we can turn our attention to the last house.<br><br>Scanning the columns, we see that the 3 of the last house in our column must be in the first column and third row."
 %}
 
-Next up, <a href="/posts/elimination">elimination</a>.
+Next up, <a href="/posts/elimination-in-sudoku">elimination</a>.
