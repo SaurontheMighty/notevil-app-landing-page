@@ -32,9 +32,6 @@
 
 }
 
-// .subPageBody {
-// 	background-color: #fffcf7;
-// }
 
 .subPageHeaderBackground {
 	background-color: #fff;
@@ -56,7 +53,6 @@
 		"c c c c c c c c c c c c"
 		"f f f f f f f f f f f f"
 		"d d d d d d d d d d d d";
-	// border: 1px solid white;
 }
 
 .subPageContainer {
@@ -93,8 +89,6 @@
 }
 
 .page {
-	margin-top: 30px;
-	margin-bottom: 70px;
 	grid-column: 1/13;
 	display: flex;
 	flex-direction: row;
@@ -108,21 +102,6 @@
 .page-right {
 	flex: 0 0 20%;
 }
-
-@media only screen and (max-width: 768px) {
-
-	.page {
-		margin-top: 30px;
-		margin-bottom: 70px;
-		grid-column: 1/-1;
-		flex-direction: column;
-	}
-
-	.page-right {
-		margin-top: 50px;
-	}
-	
-} 
 
 header {
 	grid-area: h;
@@ -277,7 +256,6 @@ nav > ul li a:active {
 	flex-wrap: wrap;
 	padding-top: 120px;
 	align-content: flex-start;
-	// border: 1px solid salmon;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1223,6 +1201,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+	.page {
+		grid-column: 1/-1;
+		flex-direction: column;
+	}
+
 	.page-right {
         margin-top: 0;    // Remove top margin
         padding-top: 0;   // Remove top padding
@@ -1232,7 +1215,7 @@ footer {
 
     .posts-column {
         padding: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         height: auto;        // Allow height to adjust to content
         min-height: unset;   // Remove any minimum height constraints
         flex: 0 0 auto;      // Don't force flex growth or shrinking
