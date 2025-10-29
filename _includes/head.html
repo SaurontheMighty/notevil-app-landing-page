@@ -9,7 +9,7 @@
 	<meta property="og:title" content="{% if include.page_title %}{{ include.page_title }}{% else %}{{ site.app_title }}{% endif %}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:description" name="description" content="{% if include.page_description %}{{ include.page_description }}{% else %}{{ site.app_description }}{% endif %}">
-	<meta property="og:image" content="{% if include.thumbnail %}{{ include.thumbnail | relative_url }}{% else %}{{ site.app_icon | relative_url }}{% endif %}">
+	<meta property="og:image" content="{% if include.thumbnail %}{{ include.thumbnail | relative_url }}{% else %}{{ '/assets/default_thumbnail.png' | relative_url }}{% endif %}">
 	<meta property="og:site_name" content="Not Evil Sudoku Blog" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}" />

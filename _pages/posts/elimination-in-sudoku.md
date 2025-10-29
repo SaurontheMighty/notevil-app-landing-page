@@ -3,6 +3,7 @@ layout: post
 title: Beginner Techniques - Eliminating Candidates in Sudoku
 description: "Elimination involves noting down the possibilites for a cell in a sudoku puzzle and eliminating conflicting numbers that appear in the same row, column or house."
 short_title: 🙅 Elimination
+thumbnail: /assets/elimination_thumbnail.png
 include_in_header: false
 order: 5
 category: "Techniques"

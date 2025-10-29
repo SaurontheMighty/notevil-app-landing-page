@@ -3,6 +3,7 @@ layout: post
 title: Beginner Techniques - Hidden Singles in Sudoku
 description: "Hidden singles is an intermediate sudoku technique where there is only one possible cell that a certain number can go in even if it doesn't immediately appear so from eliminating candidates."
 short_title: 🙈 Hidden Singles
+thumbnail: /assets/hiddensingle_thumbnail.png
 include_in_header: false
 order: 6
 category: "Techniques"
