@@ -25,7 +25,18 @@ Analytics System Versions:
 
 App versions v3.6.5 and above use SideKit. Older versions use a custom analytics system which may be running on Cloudflare or Amazon Web Services.
 
-However, other websites or applications that are linked to inside the app that are not related to Not Evil Sudoku such as Apple's App Store, GameCenter, translation services and others may collect data including personal information and users of Not Evil Sudoku should read their privacy policies if they intend to visit or use those services.
+## Feedback
+The app includes a "Send Feedback" feature that lets you describe an issue or share a suggestion. When you submit feedback, the following data is sent to SideKit:
+
+- **Feedback text:** The message you write
+- **Email address (optional):** If you choose to provide your email so we can follow up
+
+Your email address, if provided, is stored by SideKit as described in the [SideKit Privacy Policy](https://appsidekit.com/privacy). It is only used to respond to your feedback and is not shared with third parties. You may request deletion of your feedback data by contacting us at sudoku@notevil.app.
+
+If you do not provide an email, your feedback is anonymous and cannot be linked back to you.
+
+## Third Party Links
+Other websites or applications that are linked to inside the app that are not related to Not Evil Sudoku such as Apple's App Store, GameCenter, translation services and others may collect data including personal information and users of Not Evil Sudoku should read their privacy policies if they intend to visit or use those services.
 
 ## Third Parties
 The app may link to third party websites in sections such as Settings -> Translate and Settings -> Made Possible By. Each of these websites has their own privacy policy which users should read. This privacy policy only covers the Not Evil Sudoku app.
@@ -36,7 +47,7 @@ The user identifier is NOT linked to any of the user's personal information. It 
 Post May 16th, 2025, the identifier is no longer used, and no identifier is collected in the app, however this may change in the future.
 
 ## Changes
-Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022 and was last updated on January 4, 2026.
+Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022 and was last updated on February 23, 2026.
 
 ## Contact Us
 Feel free to reach out at: sudoku@notevil.app.
