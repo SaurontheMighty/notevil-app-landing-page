@@ -12,7 +12,7 @@ The Not Evil Sudoku website uses <a href="https://www.cloudflare.com/web-analyti
 Since Ashish Selvaraj is a single individual building the app in his free time, features need to be prioritized based on app usage. It isn't practical to spend a week building a feature that only a few people want. So, the app collects some anonymous information as described below.
 
 ## Data Transmitted
-The data we collect is general information that is not linked to you, such as: an identifier (further details under the "Identifier" section), iOS version, country, language, games played, purchase related events and so on. We collect game information to improve our puzzle selection. If there's a certain puzzle in the "hard" category but on average users only take 3 minutes to solve it, this is clearly misplaced. 
+The data we collect is general information that is not linked to you, such as: an identifier (further details under the "Identifier" section), iOS version, country, language, games played, purchase related events and so on. If you opt in, your Game Center tag is also sent alongside game played events (see "Worldwide Games Played & Top Player" below). We collect game information to improve our puzzle selection. If there's a certain puzzle in the "hard" category but on average users only take 3 minutes to solve it, this is clearly misplaced. 
 
 We aim to collect as little data as possible. Information like that helps us make decisions like: "is it worth it to drop that iOS version?" and "which languages should I try to get the app translated into". Other information like the time taken to complete a particular puzzle are also collected so that the average time to complete a game and other metrics can be calculated. Knowing what devices use the app let us decide which bugs should be prioritized, if most active users use their phone then phone related bugs will be prioritzed over iPad ones.
 
@@ -35,6 +35,11 @@ Your email address, if provided, is stored by SideKit as described in the [SideK
 
 If you do not provide an email, your feedback is anonymous and cannot be linked back to you.
 
+## Worldwide Games Played & Top Player
+The app displays the total number of games played worldwide in the Settings tab. This count is derived from anonymous, aggregated analytics data and is not linked to any individual user.
+
+The Settings tab also displays the Game Center tag of the player who has played the most games. Sharing your Game Center tag for this purpose is entirely opt-in. If you opt in, your Game Center tag is sent to and stored on SideKit's servers alongside each game played event. This allows us to determine who has played the most games. Your Game Center tag may be visible to all users of the app. You can opt out at any time in the app's Settings, which will stop your Game Center tag from being sent with future game events and remove it from being displayed. Data already stored on SideKit's servers is subject to the [SideKit Privacy Policy](https://appsidekit.com/privacy). Note this is an additional opt-in alongside the analytics opt-in. To opt-in you must select the gear icon on the games played card and set the toggle to on.
+
 ## Third Party Links
 Other websites or applications that are linked to inside the app that are not related to Not Evil Sudoku such as Apple's App Store, GameCenter, translation services and others may collect data including personal information and users of Not Evil Sudoku should read their privacy policies if they intend to visit or use those services.
 
@@ -47,7 +52,7 @@ The user identifier is NOT linked to any of the user's personal information. It 
 Post May 16th, 2025, the identifier is no longer used, and no identifier is collected in the app, however this may change in the future.
 
 ## Changes
-Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022 and was last updated on February 23, 2026.
+Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022 and was last updated on April 3, 2026.
 
 ## Contact Us
 Feel free to reach out at: sudoku@notevil.app.
