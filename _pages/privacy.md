@@ -40,6 +40,29 @@ The app displays the total number of games played worldwide in the Settings tab.
 
 The Settings tab also displays the Game Center tag of the player who has played the most games. Sharing your Game Center tag for this purpose is entirely opt-in. If you opt in, your Game Center tag is sent to and stored on SideKit's servers alongside each game played event. This allows us to determine who has played the most games. Your Game Center tag may be visible to all users of the app. You can opt out at any time in the app's Settings, which will stop your Game Center tag from being sent with future game events. Data already stored on SideKit's servers is subject to the [SideKit Privacy Policy](https://appsidekit.com/privacy). Note this is an additional opt-in alongside the analytics opt-in. To opt-in you must select the gear icon on the games played card and set the toggle to on.
 
+## Multiplayer
+The app includes an optional multiplayer mode that lets you play with friends in real time. Multiplayer is opt-in — none of the data in this section is collected unless you choose to use it.
+
+### Phone number and sign-in
+To use multiplayer you sign in with a phone number and a one-time SMS code. The code is sent via [Twilio Verify](https://www.twilio.com/legal/privacy), so your phone number is shared with Twilio for delivery.
+
+We do not store your raw phone number on our servers. We store only a hash of it, which is what links your account across reinstalls. When you request a sign-in code we also store a hashed version of your IP address alongside that request, plus the number of verify attempts, so we can rate-limit sign-in attempts and prevent abuse. We do not store your raw IP address.
+
+If you stop using multiplayer you can delete your account and all associated data from inside the app. This permanently removes your handle, friends, invites, and game history.
+
+### Handle
+Multiplayer requires a public handle (e.g. `@ashish`) so other players can find and invite you. Your handle is visible to other users of the app. Phone numbers are never shown to other players — only handles. Other users can report a handle from inside the app; reported handles may be renamed.
+
+### Friends and invites
+If you add a friend or send/accept an invite, we store the friend relationship (you and your friend, plus when you last interacted) and the invite itself (who invited whom, mode, difficulty, timestamps, and status). 
+
+### Game sessions
+While you're playing a multiplayer game, your moves are relayed by our server to your partner in real time. 
+
+Live game events are kept briefly so a player who disconnects can resync, and are deleted automatically a short time after the game ends or both players leave. Once a game ends we keep a record of the game for game history and abuse prevention.
+
+We do not sell or rent any multiplayer data.
+
 ## Third Party Links
 Other websites or applications that are linked to inside the app that are not related to Not Evil Sudoku such as Apple's App Store, GameCenter, translation services and others may collect data including personal information and users of Not Evil Sudoku should read their privacy policies if they intend to visit or use those services.
 
@@ -51,8 +74,17 @@ The user identifier is NOT linked to any of the user's personal information. It 
 
 Post May 16th, 2025, the identifier is no longer used, and no identifier is collected in the app, however this may change in the future.
 
+## Service Providers
+We use the following third parties to run the app and website. Each has its own privacy policy.
+
+| Provider   | Used for                                    | Privacy policy |
+|------------|---------------------------------------------|----------------|
+| Twilio     | SMS sign-in code for multiplayer            | [twilio.com/legal/privacy](https://www.twilio.com/legal/privacy) |
+| Cloudflare | Hosting (multiplayer), website analytics | [cloudflare.com/privacypolicy](https://www.cloudflare.com/privacypolicy/) |
+| SideKit    | App analytics and feedback                  | [appsidekit.com/privacy](https://appsidekit.com/privacy) |
+
 ## Changes
-Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022 and was last updated on April 3, 2026.
+Ashish Selvaraj reserves the right to make changes to this policy at any time. Any changes wil be posted here in a timely manner, please review it frequently to stay up-to-date. This policy is valid from April 11, 2022 and was last updated on May 8, 2026.
 
 ## Contact Us
 Feel free to reach out at: sudoku@notevil.app.
